@@ -1,1 +1,99 @@
-/*# sourceMappingURL=meditation-website.css.map */
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+body .main-container .top-bar {
+  display: grid;
+  grid-template-columns: auto 100px;
+}
+body .main-container .top-bar header {
+  display: flex;
+  height: 80px;
+}
+body .main-container .top-bar header .header-left {
+  display: flex;
+  background-color: rgb(227, 235, 251);
+  align-items: center;
+  width: 350px;
+}
+body .main-container .top-bar header .header-left .header-logo svg {
+  height: 60px;
+  widtH: 130px;
+}
+body .main-container .top-bar header .header-left .header-text {
+  font-family: poppins-extralight, poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+body .main-container .top-bar header .header-left .header-text a {
+  color: rgb(96, 98, 114);
+  text-decoration: none;
+}
+body .main-container .top-bar header .header-right {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 80px;
+  gap: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body .main-container .top-bar header .header-right .log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+body .main-container .top-bar header .header-right .log-in i {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgb(96, 98, 114);
+  font-size: 30px;
+}
+body .main-container .top-bar header .header-right .log-in p a {
+  text-decoration: none;
+  color: rgb(96, 98, 114);
+}
+body .main-container .top-bar header .header-right .log-in p a:hover {
+  color: rgb(190, 187, 187);
+}
+body .main-container .top-bar header .header-right .trial-button button {
+  font-size: 17px;
+  padding: 10px 30px;
+  background-color: #F3A391;
+  border: 0;
+  border-radius: 20px;
+}
+body .main-container .top-bar header .header-right .trial-button button a {
+  text-decoration: none;
+  color: rgb(96, 98, 114);
+  font-weight: lighter;
+}
+body .main-container .top-bar header .header-right .trial-button:hover button {
+  background-color: rgb(96, 98, 114);
+}
+body .main-container .top-bar header .header-right .trial-button:hover button a {
+  color: white;
+}
+body .main-container .top-bar nav {
+  background-color: #454659;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+body .main-container .top-bar nav svg {
+  width: 80px;
+  height: 40px;
+}
+body .main-container .top-bar nav .nav-bar {
+  width: 1000px;
+  height: 600px;
+  background-color: #F3A391;
+}/*# sourceMappingURL=meditation-website.css.map */

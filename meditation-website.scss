@@ -296,7 +296,7 @@ body {
                 justify-content: center;
 
                 .breez-experience {
-                    margin-top: -130px;
+                    margin-top: -50px;
                 }
 
                 h2 {
@@ -412,6 +412,100 @@ body {
                         }
                     }
 
+                }
+            }
+
+            .registration {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 750px;
+                margin-top: -95px;
+
+                .images {
+                   background-image: url('https://static.wixstatic.com/media/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg/v1/fill/w_632,h_762,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg');
+                   height: 100%;
+                   width: 600px;
+                   position: relative;
+
+                   svg {
+                    position: absolute;
+                    width: 370px;
+                    height: 100%;
+                    left: 100px;
+                    bottom: 35px;
+
+                   }
+
+                   img {
+                    position: absolute;
+                    width: 311px;
+                    height: 428px;
+                    top: 130px;
+                    left: 130px;
+                   }
+            
+                }
+
+                .text {
+                    margin-left: 50px;
+                    margin-right: 120px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 70px;
+
+                    h2 {
+                        font-size: 62px;
+                        color: rgb(72, 73, 85);
+                        line-height: 1.2em;
+                        margin-bottom: 50px;
+                    }
+
+                    .subheading {
+                        font-size: 20px;
+                        color: rgb(106, 107, 119);
+                        font-weight: 100;
+                        width: 350px;
+                        line-height: 25px;
+                        
+                    }
+
+                    p {
+                        font-size: 17px;
+                        color: rgb(114, 116, 131);
+                        font-weight: 100;
+                        width: 350px;
+                        line-height: 25px;
+                        
+                    }
+
+                    .book-button {
+
+                        button {
+                            font-size: 17px;
+                            padding: 15px 30px;
+                            background-color: rgb(72, 73, 85);
+                            border: 0;
+                            border-radius: 25px;
+                            margin-bottom: 40px;
+                            margin-top: 30px;
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-weight: lighter;
+                            }
+                            }
+
+                            &:hover {
+                                button {
+                                    background-color: #F3A391;
+
+                                    a {
+                                        color: rgb(72, 73, 85);
+                                    }
+                                }
+
+                            }
+                    }
                 }
             }
         }

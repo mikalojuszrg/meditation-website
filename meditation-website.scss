@@ -3,6 +3,10 @@ body {
     box-sizing: border-box;
 
     .main-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
         .top-bar {
             display: grid;
             grid-template-columns: auto 100px;
@@ -10,12 +14,14 @@ body {
             header {
                 display: flex;
                 height: 80px;
+               
 
                 .header-left {
                     display: flex;
                     background-color: rgb(227,235,251);
                     align-items: center;
                     width: 350px;
+                    min-width: 250px;
 
                     .header-logo {
 
@@ -27,12 +33,12 @@ body {
 
                     .header-text {
                         font-family: poppins-extralight,poppins,sans-serif;
-                        font-size: 24px;
+                        font-size: 20px;
                         font-weight: 100;
-                        letter-spacing: 4px;
+                        letter-spacing: 6px;
 
                         a {
-                            color: rgb(96, 98, 114);
+                            color: rgb(66, 67, 79);
                             text-decoration: none;
                         }
                     }
@@ -58,13 +64,13 @@ body {
 
                         i {
                             height: fit-content;
-                            color: rgb(96, 98, 114);
+                            color: rgb(72, 73, 85);
                             font-size: 30px;
                         }
 
                         p a {
                             text-decoration: none;
-                            color: rgb(96, 98, 114);
+                            color: rgb(72, 73, 85);
 
                             &:hover {
                                 color: rgb(190, 187, 187);
@@ -83,14 +89,14 @@ body {
 
                             a {
                                 text-decoration: none;
-                                color: rgb(96, 98, 114);
+                                color: rgb(72, 73, 85);
                                 font-weight: lighter;
                             }
                             }
 
                             &:hover {
                                 button {
-                                    background-color: rgb(96, 98, 114);
+                                    background-color: rgb(72, 73, 85);
 
                                     a {
                                         color: white;
@@ -126,6 +132,165 @@ body {
 
                 }
             }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, auto);
+            gap: 100px;
+
+            .intro {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 100px;
+                width: 100%;
+
+
+                .text {
+                    grid-column: 1;
+                    margin-left: 100px;
+                    margin-right: 50px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 400px;
+
+                    h3 {
+                        font-size: 62px;
+                        color: rgb(72, 73, 85);
+                        line-height: 1.2em;
+                        margin-bottom: 50px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: rgb(114, 116, 131);
+                        font-weight: 100;
+                        
+                    }
+
+                    .trial-button2 {
+
+                        button {
+                            font-size: 17px;
+                            padding: 15px 30px;
+                            background-color: rgb(72, 73, 85);
+                            border: 0;
+                            border-radius: 25px;
+                            margin-bottom: 40px;
+                            margin-top: 50px;
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-weight: lighter;
+                            }
+                            }
+
+                            &:hover {
+                                button {
+                                    background-color: #F3A391;
+
+                                    a {
+                                        color: rgb(72, 73, 85);
+                                    }
+                                }
+
+                            }
+                    }
+
+                    .livestream {
+                        display: flex;
+                        height: 40px;
+                        align-items: center;
+                        gap: 15px;
+                        
+                        
+
+                        svg {
+                            width: 30px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            
+                            a {
+                                color: rgb(114, 116, 131);
+                            }
+                        }
+                    }
+                   
+                }
+
+                .images {
+                    grid-column: 2;
+                    position: relative;
+                    min-width: 400px;
+                    height: 700px;
+                    width: 100%;
+                    margin-top: 2px;
+
+                    .background-image {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: -1;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // img {
+                        // width: 100%;
+                        // height: 100%;
+                        // }
+                    }
+
+                    .svg-frame {
+                        position: absolute;
+                        top: 70px;
+                        left: 90px;
+                        
+                        z-index: 2;
+                    
+                      
+
+                        // svg {
+                        //     width: 400px;
+                        //     height: 400px;
+                        // }
+                    }
+
+                    .foreground-image {
+                        position: absolute;
+                        top: 150px;
+                        left: 210px;
+                        z-index: 1;
+                        height: 350px;
+                        width: 300px;
+                       
+                       
+                       
+                      
+
+                        // img {
+                        //     height: 100%;
+                        //     width: 100%;
+                        // }
+                    }
+
+                }
+
+                .blue-block {
+                    background-color: #E6EFFF;
+                    grid-row: 2;
+                    grid-column: 2;
+                }
+            }
+
+            // .benefits {
+            //     background-image: url('https://static.wixstatic.com/media/84770f_55ff847055214840ba54a966ab136884~mv2.jpg/v1/fill/w_1552,h_1080,al_c,q_85,enc_auto/84770f_55ff847055214840ba54a966ab136884~mv2.jpg');
+            //     height: 1000px;
+            //     width: 100%;
+            //     margin-top: -100px;
+            // }
         }
     }
 }

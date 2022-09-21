@@ -139,6 +139,7 @@ body {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(7, auto);
             gap: 100px;
+            font-family: Arial, Helvetica, sans-serif;
 
             .intro {
                 display: grid;
@@ -154,7 +155,7 @@ body {
                     font-family: Arial, Helvetica, sans-serif;
                     width: 400px;
 
-                    h3 {
+                    h2 {
                         font-size: 62px;
                         color: rgb(72, 73, 85);
                         line-height: 1.2em;
@@ -285,12 +286,134 @@ body {
                 }
             }
 
-            // .benefits {
-            //     background-image: url('https://static.wixstatic.com/media/84770f_55ff847055214840ba54a966ab136884~mv2.jpg/v1/fill/w_1552,h_1080,al_c,q_85,enc_auto/84770f_55ff847055214840ba54a966ab136884~mv2.jpg');
-            //     height: 1000px;
-            //     width: 100%;
-            //     margin-top: -100px;
-            // }
+            .benefits {
+                background-image: url('https://static.wixstatic.com/media/84770f_55ff847055214840ba54a966ab136884~mv2.jpg/v1/fill/w_1552,h_1080,al_c,q_85,enc_auto/84770f_55ff847055214840ba54a966ab136884~mv2.jpg');
+                height: 1000px;
+                width: 100%;
+                margin-top: -100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .breez-experience {
+                    margin-top: -130px;
+                }
+
+                h2 {
+                    font-size: 62px;
+                    color: rgb(72, 73, 85);
+                    margin-bottom: 50px;
+                    text-align: center;
+                    margin-top: 80px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin: 0 auto;
+                    width: 40%;
+                    text-align: center;
+                    margin-bottom: 70px;
+                    color: rgb(72, 73, 85);
+                    line-height: 30px;
+                }
+
+                .cards {
+                    display: flex;
+                    width: 100%;
+                    margin-top: 100px;
+
+                    .first {
+                        flex: 0 0 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        img {
+                            width: 300px;
+                            height: 300px;
+                            margin: 0 auto;
+                            margin-bottom: 60px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            color: rgb(72, 73, 85);
+                            width: 50%;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                            color: rgb(114, 116, 131);
+                            line-height: 22px;
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .second {
+                        flex: 0 0 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        img {
+                            width: 300px;
+                            height: 300px;
+                            margin: 0 auto;
+                            margin-bottom: 60px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            color: rgb(72, 73, 85);
+                            width: 50%;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                            color: rgb(114, 116, 131);
+                            line-height: 22px;
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .third {
+                        flex: 0 0 33%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        img {
+                            width: 300px;
+                            height: 300px;
+                            margin: 0 auto;
+                            margin-bottom: 60px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            color: rgb(72, 73, 85);
+                            width: 50%;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                            color: rgb(114, 116, 131);
+                            line-height: 22px;
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                }
+            }
         }
     }
 }

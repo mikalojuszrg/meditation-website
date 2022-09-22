@@ -830,4 +830,128 @@ body .main-container .content .recommendations-list .sleep .images img {
 }
 body .main-container .content .recommendations-list .sleep .images:hover {
   opacity: 0.95;
+}
+body .main-container .content .approach {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  margin-top: -25px;
+}
+body .main-container .content .approach img {
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+body .main-container .content .approach .meditate {
+  z-index: 3;
+  opacity: 1;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: 420px;
+  left: 927px;
+}
+body .main-container .content .approach .block {
+  z-index: 3;
+  opacity: 1;
+  position: absolute;
+  top: 420px;
+  left: 905px;
+  width: 350px;
+  height: 500px;
+}
+body .main-container .content .approach .blue-block {
+  z-index: 2;
+  opacity: 1;
+  position: absolute;
+  background-color: #E6EFFF;
+  width: 320px;
+  height: 420px;
+  top: 460px;
+  left: 920px;
+}
+body .main-container .content .approach .citation {
+  z-index: 1;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 280px;
+  height: 617px;
+  width: 786px;
+  background-color: #F3A391;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto auto auto;
+  color: #454659;
+  justify-items: start;
+  align-content: center;
+  padding-left: 60px;
+}
+body .main-container .content .approach .citation .quote-start {
+  display: flex;
+  gap: 20px;
+}
+body .main-container .content .approach .citation .quote-start .quote-mark1 {
+  width: 60px;
+  grid-row: 1;
+  grid-column: 1;
+  height: 60px;
+}
+body .main-container .content .approach .citation .quote-start .box-title {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main-container .content .approach .citation .quote-content {
+  display: flex;
+}
+body .main-container .content .approach .citation .quote-content .quote {
+  grid-column: 1;
+  grid-row: 2/3;
+  font-size: 36px;
+  font-weight: bolder;
+  width: 600px;
+  line-height: 55px;
+}
+body .main-container .content .approach .citation .quote-content .quote-mark2 {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 220px;
+  right: 125px;
+}
+body .main-container .content .approach .citation .author {
+  font-size: 17px;
+}
+body .main-container .content .approach .citation .read-more-button2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main-container .content .approach .citation .read-more-button2 button {
+  font-size: 17px;
+  padding: 15px 40px;
+  background-color: rgb(72, 73, 85);
+  border: 2px solid rgb(72, 73, 85);
+  border-radius: 25px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+body .main-container .content .approach .citation .read-more-button2 button a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+body .main-container .content .approach .citation .read-more-button2:hover button {
+  background-color: #F3A391;
+  border: 2px solid rgb(72, 73, 85);
+}
+body .main-container .content .approach .citation .read-more-button2:hover button a {
+  color: rgb(72, 73, 85);
 }/*# sourceMappingURL=meditation-website.css.map */

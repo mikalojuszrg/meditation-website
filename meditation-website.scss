@@ -146,6 +146,7 @@ body {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 100px;
                 width: 100%;
+                margin-top: 1px;
 
 
                 .text {
@@ -678,6 +679,398 @@ body {
                 }
 
 
+            }
+
+            .recommendations-intro {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 400px;
+                text-align: center;
+                
+                
+
+                h2 {
+                    font-size: 62px;
+                    color: rgb(72, 73, 85);
+                    line-height: 1.2em;
+                    width: 700px;
+                    margin: 0 auto;
+                    margin-top: 35px;
+                    margin-bottom: 40px;
+                    
+                   
+                }
+
+                .subheading {
+                    font-size: 20px;
+                    color: rgb(106, 107, 119);
+                    font-weight: 100;
+                    line-height: 30px;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-size: 17px;
+                    color: rgb(114, 116, 131);
+                    font-weight: 100;
+                    line-height: 25px;
+                    width: 570px;
+                    margin: 0 auto;
+                }
+            }
+
+            .recommendations-list {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: -80px;
+                gap: 70px;
+               
+
+                .balance {
+                    display: grid;
+                    grid-template-columns: 550px 80px 600px;
+                    grid-template-rows: auto 400px auto;
+                    width: auto;
+                    justify-content: center;
+                    
+                   
+
+                    .card {
+                       
+                        background-color: #E6EFFF;
+                        grid-row: 2;
+                        grid-column: 1 / 3;
+                        z-index: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 36px;
+                            text-decoration: none;
+                            margin-bottom: 0;
+                            margin-top: 40px;
+
+                            a {
+                                text-decoration: none;
+                                color: #454659;
+                            }
+                        }
+
+                        .info {
+                            font-size: 16px;
+                            color: rgb(106, 107, 119);
+                            border-bottom: 1px solid #898a96;
+                            padding-bottom: 30px;
+                            width: 80%;
+                            text-align: center;
+                        }
+
+                        .date {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                        }
+
+                        .price {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                        }
+
+                        .book-button-2 {
+                            width: fit-content;
+
+                            button {
+                                font-size: 16px;
+                                padding: 10px 30px;
+                                background-color: rgb(72, 73, 85);
+                                border: 0;
+                                border-radius: 25px;
+                                margin-bottom: 40px;
+                                margin-top: 10px;
+                                
+    
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                            }
+    
+                                &:hover {
+                                    button {
+                                        background-color: rgb(72, 73, 85);
+                                        opacity: 0.8;
+    
+                                        a {
+                                            color: white;
+                                        }
+                                    }
+    
+                                }
+                                
+                         
+                        }
+                        
+                        
+                    }
+
+                    .images {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 4;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            max-height: 100%;
+                            background-color: black;
+
+                        }
+                           
+                            &:hover {
+                           
+                                
+                                opacity: 0.95;
+                                
+                                
+                               }
+                            }
+                  
+                }
+
+                .relaxation {
+                    display: grid;
+                    grid-template-columns: 550px 80px 600px;
+                    grid-template-rows: auto 400px auto;
+                    width: auto;
+                    justify-content: center;
+                    
+                   
+
+                    .card {
+                       
+                        background-color: #E6EFFF;
+                        grid-row: 2;
+                        grid-column: 1 / 3;
+                        z-index: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 36px;
+                            text-decoration: none;
+                            margin-bottom: 0;
+                            margin-top: 40px;
+
+                            a {
+                                text-decoration: none;
+                                color: #454659;
+                            }
+                        }
+
+                        .info {
+                            font-size: 16px;
+                            color: rgb(106, 107, 119);
+                            border-bottom: 1px solid #898a96;
+                            padding-bottom: 30px;
+                            width: 80%;
+                            text-align: center;
+                        }
+
+                        .date {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                        }
+
+                        .price {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                        }
+
+                        .book-button-2 {
+                            width: fit-content;
+
+                            button {
+                                font-size: 16px;
+                                padding: 10px 30px;
+                                background-color: rgb(72, 73, 85);
+                                border: 0;
+                                border-radius: 25px;
+                                margin-bottom: 40px;
+                                margin-top: 10px;
+                                
+    
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                            }
+    
+                                &:hover {
+                                    button {
+                                        background-color: rgb(72, 73, 85);
+                                        opacity: 0.8;
+    
+                                        a {
+                                            color: white;
+                                        }
+                                    }
+    
+                                }
+                                
+                         
+                        }
+                        
+                        
+                    }
+
+                    .images {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 4;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            max-height: 100%;
+                            background-color: black;
+
+                        }
+                           
+                            &:hover {
+                           
+                                
+                                opacity: 0.95;
+                                
+                                
+                               }
+                            }
+                }
+
+                .sleep {
+                    display: grid;
+                    grid-template-columns: 550px 80px 600px;
+                    grid-template-rows: auto 400px auto;
+                    width: auto;
+                    justify-content: center;
+                    
+                   
+
+                    .card {
+                       
+                        background-color: #E6EFFF;
+                        grid-row: 2;
+                        grid-column: 1 / 3;
+                        z-index: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 36px;
+                            text-decoration: none;
+                            margin-bottom: 0;
+                            margin-top: 40px;
+
+                            a {
+                                text-decoration: none;
+                                color: #454659;
+                            }
+                        }
+
+                        .info {
+                            font-size: 16px;
+                            color: rgb(106, 107, 119);
+                            border-bottom: 1px solid #898a96;
+                            padding-bottom: 30px;
+                            width: 80%;
+                            text-align: center;
+                        }
+
+                        .date {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                        }
+
+                        .price {
+                            font-size: 20px;
+                            color: rgb(106, 107, 119);
+                            margin-top: 15px;
+                        }
+
+                        .book-button-2 {
+                            width: fit-content;
+
+                            button {
+                                font-size: 16px;
+                                padding: 10px 30px;
+                                background-color: rgb(72, 73, 85);
+                                border: 0;
+                                border-radius: 25px;
+                                margin-bottom: 40px;
+                                margin-top: 10px;
+                                
+    
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                            }
+    
+                                &:hover {
+                                    button {
+                                        background-color: rgb(72, 73, 85);
+                                        opacity: 0.8;
+    
+                                        a {
+                                            color: white;
+                                        }
+                                    }
+    
+                                }
+                                
+                         
+                        }
+                        
+                        
+                    }
+
+                    .images {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 4;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            max-height: 100%;
+                            background-color: black;
+
+                        }
+                           
+                            &:hover {
+                           
+                                
+                                opacity: 0.95;
+                                
+                                
+                               }
+                            }
+                }
             }
         }
     }

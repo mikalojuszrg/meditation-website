@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="images">
-                    <img class="background-image" src="https://static.wixstatic.com/media/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg/v1/fill/w_612,h_716,al_bl,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg%22" alt="pink clouds" id="background1">
+                    <!-- <img class="background-image" src="https://static.wixstatic.com/media/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg/v1/fill/w_612,h_716,al_bl,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg%22" alt="pink clouds" id="background1"> -->
                     
                         
                         <svg class="svg-frame" preserveAspectRatio="xMidYMid meet" data-bbox="37.263 24.865 125.472 150.269" viewBox="37.263 24.865 125.472 150.269" width="75%" height="75%" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="svgcid-kme671-uuoe2f"><defs><style>#comp-kmbr7p13 svg [data-color="1"] {fill: #454659;}</style></defs><title id="svgcid-kme671-uuoe2f"></title>
@@ -77,7 +77,7 @@
                                                                 </g>
                         </svg>
                   
-                    <img class="foreground-image" src="https://static.wixstatic.com/media/c837a6_3521b0185f5a43f18455141ab5dd6409~mv2.jpg/v1/fill/w_732,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_224520433_edited.jpg" alt="people meditating">
+                    <img loading="lazy" class="foreground-image" src="https://static.wixstatic.com/media/c837a6_3521b0185f5a43f18455141ab5dd6409~mv2.jpg/v1/fill/w_732,h_878,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/shutterstock_224520433_edited.jpg" alt="people meditating">
                 </div>
                 <div class="blue-block"></div>
             </section>
@@ -128,7 +128,38 @@
                     <div class="book-button"><button><a href="">Book Now</a></button></div>
                 </div>
             </section>
-            <section class="plans"></section>
+            <section class="plans">
+                <div class="text">
+                    <h2>Our Plans</h2>
+                    <p>
+                        Choose a plan and
+                        <br><span>get a 14-day trial for free</span>.</br>
+                        Enjoy unlimited access to our
+                        online classes and workshops.
+                        You can cancel any time.
+                    </p>
+                </div>
+                <div class="plans-selection">
+                    <div class="monthly">
+                        <p class="plan-name">MONTHLY PLAN</p>
+                        <p class="offer">Cancel Anytime</p>
+                        <p class="dollar-sign">$</p>
+                        <p class="price">29</p>
+                        <div class="see-more-button">
+                        <button><a href="">See More</a></button>
+                        </div>
+                    </div>
+                    <div class="yearly">
+                        <p class="plan-name">YEARLY PLAN</p>
+                        <p class="offer">Limited Offer: 25% Off</p>
+                        <p class="dollar-sign">$</p>
+                        <p class="price">250</p>
+                        <div class="see-more-button">
+                            <button><a href="">See More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="recommendations"></section>
             <section class="approach"></section>
         </main>
@@ -145,6 +176,19 @@
 
             background1.style.top = value * 1 + 'px';
             })
+    </script> -->
+
+    <!-- <script>
+        function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.images').css({'transform':'translate(0px,'+scrolled /100+'%'});
+    }
+
+
+
+    $(window).scroll(function(e){
+    parallax();
+    });
     </script> -->
 </body>
 </html>

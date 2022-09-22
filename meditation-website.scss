@@ -225,47 +225,29 @@ body {
                 .images {
                     grid-column: 2;
                     position: relative;
-                    min-width: 400px;
-                    height: 700px;
+                    background-image: url('https://static.wixstatic.com/media/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg/v1/fill/w_612,h_716,al_bl,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg%22" alt="pink clouds" id="background1');
+                    height: auto;
                     width: 100%;
-                    margin-top: 2px;
-
-                    .background-image {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        z-index: -1;
-                        width: 100%;
-                        height: 100%;
-                        
-                        // img {
-                        // width: 100%;
-                        // height: 100%;
-                        // }
+                    height: 100%;
+                    // background-attachment: scroll;
+                    // background-position: center;
+                    background-size: cover;
+                 
+                    svg {
+                    position: absolute;
+                    width: 420px;
+                    height: 100%;
+                    left: 150px;
+                    top: 0px;
+                    z-index: 1;
                     }
 
-                    .svg-frame {
-                        position: absolute;
-                        top: 70px;
-                        left: 90px;
-                        
-                        z-index: 2;
-                    
-                      
-
-                        // svg {
-                        //     width: 400px;
-                        //     height: 400px;
-                        // }
-                    }
-
-                    .foreground-image {
-                        position: absolute;
-                        top: 150px;
-                        left: 210px;
-                        z-index: 1;
-                        height: 350px;
-                        width: 300px;
+                    img {
+                    position: absolute;
+                    width: 366px;
+                    height: 439px;
+                    top: 100px;
+                    left: 180px;
                        
                        
                        
@@ -420,6 +402,7 @@ body {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 750px;
                 margin-top: -95px;
+                z-index: 0;
 
                 .images {
                    background-image: url('https://static.wixstatic.com/media/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg/v1/fill/w_632,h_762,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg');
@@ -450,7 +433,7 @@ body {
                     margin-left: 50px;
                     margin-right: 120px;
                     font-family: Arial, Helvetica, sans-serif;
-                    margin-top: 70px;
+                    margin-top: 20px;
 
                     h2 {
                         font-size: 62px;
@@ -472,7 +455,7 @@ body {
                         font-size: 17px;
                         color: rgb(114, 116, 131);
                         font-weight: 100;
-                        width: 350px;
+                        width: 370px;
                         line-height: 25px;
                         
                     }
@@ -507,6 +490,194 @@ body {
                             }
                     }
                 }
+            }
+
+            .plans {
+                display: grid;
+                grid-template-columns: 7fr 11fr;
+                grid-template-rows: 650px;
+                margin-top: -150px;
+                z-index: 1;
+                
+                .text {
+                    margin-top: 140px;
+                    margin-left: 80px;
+
+                    h2 {
+                        font-size: 62px;
+                        color: rgb(72, 73, 85);
+                        line-height: 1.2em;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: rgb(106, 107, 119);
+                        font-weight: 100;
+                        width: 300px;
+                        line-height: 30px;
+
+                        span {
+                            color: #AB6353;
+                        }
+                    }
+                }
+
+                .plans-selection {
+                    background-image: url('https://static.wixstatic.com/media/84770f_4ce383441e8f47588a403fe461def56e~mv2.jpg/v1/fill/w_828,h_695,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_4ce383441e8f47588a403fe461def56e~mv2.jpg');
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px;
+                    font-family: Arial, Helvetica, sans-serif;
+
+                    .monthly {
+                        width: 275px;
+                        height: 415px;
+                        text-align: center;
+                        background-color: #454659;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 50px;
+
+                        .plan-name {
+                            font-size: 20px;
+                            color: white;
+                            border-bottom: 1px solid white;
+                            width: 70%;
+                            margin: 0 auto;
+                            padding: 50px 0 20px 0;
+                        }
+
+                        .offer {
+                            font-size: 17px;
+                            color: white;
+                        }
+
+                        .dollar-sign {
+                            font-size: 20px;
+                            color: #F3A391;
+                            margin-right: 90px;
+                            margin-top: 30px;
+                            margin-bottom: 0;;
+                        }
+
+                        .price {
+                            font-size: 62px;
+                            color: #F3A391;
+                            margin: 0;
+                            font-weight: bold;
+                            margin-top: -13px;
+
+                        }
+
+                        .see-more-button {
+
+                            button {
+                                font-size: 17px;
+                                width: fit-content;
+                                margin: 0 auto;
+                                padding: 10px 35px;
+                                background-color: transparent;
+                                border: 1px solid white;
+                                border-radius: 25px;
+                                margin-top: 70px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                                }
+
+                                &:hover {
+                                    button {
+                                        background-color: white;
+
+                                        a {
+                                            color: #454659;
+                                        }
+                                    }
+
+                                }
+                        }
+                    }
+
+                    .yearly {
+                        width: 275px;
+                        height: 415px;
+                        text-align: center;
+                        background-color: #454659;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 50px;
+
+                        .plan-name {
+                            font-size: 20px;
+                            color: white;
+                            border-bottom: 1px solid white;
+                            width: 70%;
+                            margin: 0 auto;
+                            padding: 50px 0 20px 0;
+                        }
+
+                        .offer {
+                            font-size: 17px;
+                            color: white;
+                        }
+
+                        .dollar-sign {
+                            font-size: 20px;
+                            color: #F3A391;
+                            margin-right: 120px;
+                            margin-top: 30px;
+                            margin-bottom: 0;;
+                            
+                            
+                        }
+
+                        .price {
+                            font-size: 62px;
+                            color: #F3A391;
+                            margin: 0;
+                            font-weight: bold;
+                            margin-top: -13px;
+                        }
+
+                        .see-more-button {
+
+                            button {
+                                font-size: 17px;
+                                width: fit-content;
+                                margin: 0 auto;
+                                padding: 10px 35px;
+                                background-color: transparent;
+                                border: 1px solid white;
+                                border-radius: 25px;
+                                margin-top: 70px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                                }
+
+                                &:hover {
+                                    button {
+                                        background-color: white;
+
+                                        a {
+                                            color: #454659;
+                                        }
+                                    }
+
+                                }
+                        }
+                    }
+                }
+
+
             }
         }
     }

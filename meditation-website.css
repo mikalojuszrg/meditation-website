@@ -172,32 +172,26 @@ body .main-container .content .intro .text .livestream p a {
 body .main-container .content .intro .images {
   grid-column: 2;
   position: relative;
-  min-width: 400px;
-  height: 700px;
-  width: 100%;
-  margin-top: 2px;
-}
-body .main-container .content .intro .images .background-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+  background-image: url('https://static.wixstatic.com/media/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg/v1/fill/w_612,h_716,al_bl,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_0c56032794d942e1bc681b75ff613a63~mv2.jpg%22" alt="pink clouds" id="background1');
+  height: auto;
   width: 100%;
   height: 100%;
+  background-size: cover;
 }
-body .main-container .content .intro .images .svg-frame {
+body .main-container .content .intro .images svg {
   position: absolute;
-  top: 70px;
-  left: 90px;
-  z-index: 2;
-}
-body .main-container .content .intro .images .foreground-image {
-  position: absolute;
-  top: 150px;
-  left: 210px;
+  width: 420px;
+  height: 100%;
+  left: 150px;
+  top: 0px;
   z-index: 1;
-  height: 350px;
-  width: 300px;
+}
+body .main-container .content .intro .images img {
+  position: absolute;
+  width: 366px;
+  height: 439px;
+  top: 100px;
+  left: 180px;
 }
 body .main-container .content .intro .blue-block {
   background-color: #E6EFFF;
@@ -320,6 +314,7 @@ body .main-container .content .registration {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 750px;
   margin-top: -95px;
+  z-index: 0;
 }
 body .main-container .content .registration .images {
   background-image: url("https://static.wixstatic.com/media/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg/v1/fill/w_632,h_762,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg");
@@ -345,7 +340,7 @@ body .main-container .content .registration .text {
   margin-left: 50px;
   margin-right: 120px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 body .main-container .content .registration .text h2 {
   font-size: 62px;
@@ -364,7 +359,7 @@ body .main-container .content .registration .text p {
   font-size: 17px;
   color: rgb(114, 116, 131);
   font-weight: 100;
-  width: 350px;
+  width: 370px;
   line-height: 25px;
 }
 body .main-container .content .registration .text .book-button button {
@@ -386,4 +381,155 @@ body .main-container .content .registration .text .book-button:hover button {
 }
 body .main-container .content .registration .text .book-button:hover button a {
   color: rgb(72, 73, 85);
+}
+body .main-container .content .plans {
+  display: grid;
+  grid-template-columns: 7fr 11fr;
+  grid-template-rows: 650px;
+  margin-top: -150px;
+  z-index: 1;
+}
+body .main-container .content .plans .text {
+  margin-top: 140px;
+  margin-left: 80px;
+}
+body .main-container .content .plans .text h2 {
+  font-size: 62px;
+  color: rgb(72, 73, 85);
+  line-height: 1.2em;
+}
+body .main-container .content .plans .text p {
+  font-size: 20px;
+  color: rgb(106, 107, 119);
+  font-weight: 100;
+  width: 300px;
+  line-height: 30px;
+}
+body .main-container .content .plans .text p span {
+  color: #AB6353;
+}
+body .main-container .content .plans .plans-selection {
+  background-image: url("https://static.wixstatic.com/media/84770f_4ce383441e8f47588a403fe461def56e~mv2.jpg/v1/fill/w_828,h_695,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_4ce383441e8f47588a403fe461def56e~mv2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .main-container .content .plans .plans-selection .monthly {
+  width: 275px;
+  height: 415px;
+  text-align: center;
+  background-color: #454659;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+body .main-container .content .plans .plans-selection .monthly .plan-name {
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+body .main-container .content .plans .plans-selection .monthly .offer {
+  font-size: 17px;
+  color: white;
+}
+body .main-container .content .plans .plans-selection .monthly .dollar-sign {
+  font-size: 20px;
+  color: #F3A391;
+  margin-right: 90px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+body .main-container .content .plans .plans-selection .monthly .price {
+  font-size: 62px;
+  color: #F3A391;
+  margin: 0;
+  font-weight: bold;
+  margin-top: -13px;
+}
+body .main-container .content .plans .plans-selection .monthly .see-more-button button {
+  font-size: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+body .main-container .content .plans .plans-selection .monthly .see-more-button button a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+body .main-container .content .plans .plans-selection .monthly .see-more-button:hover button {
+  background-color: white;
+}
+body .main-container .content .plans .plans-selection .monthly .see-more-button:hover button a {
+  color: #454659;
+}
+body .main-container .content .plans .plans-selection .yearly {
+  width: 275px;
+  height: 415px;
+  text-align: center;
+  background-color: #454659;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+body .main-container .content .plans .plans-selection .yearly .plan-name {
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+body .main-container .content .plans .plans-selection .yearly .offer {
+  font-size: 17px;
+  color: white;
+}
+body .main-container .content .plans .plans-selection .yearly .dollar-sign {
+  font-size: 20px;
+  color: #F3A391;
+  margin-right: 120px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+body .main-container .content .plans .plans-selection .yearly .price {
+  font-size: 62px;
+  color: #F3A391;
+  margin: 0;
+  font-weight: bold;
+  margin-top: -13px;
+}
+body .main-container .content .plans .plans-selection .yearly .see-more-button button {
+  font-size: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+body .main-container .content .plans .plans-selection .yearly .see-more-button button a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+body .main-container .content .plans .plans-selection .yearly .see-more-button:hover button {
+  background-color: white;
+}
+body .main-container .content .plans .plans-selection .yearly .see-more-button:hover button a {
+  color: #454659;
 }/*# sourceMappingURL=meditation-website.css.map */

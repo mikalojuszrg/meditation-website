@@ -112,25 +112,107 @@ body {
             }
             
 
-            nav {
+            .nav-bar {
                 background-color: #454659;
                 height: 80px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding-left: 5px;
+                font-family: Arial, Helvetica, sans-serif;
 
+                .navMenu {
+                    position: fixed;
+                    right: -100%;
+                    z-index: 3;
+                    transition: 0.6s;
+                    width: 800px;
+                    height: 100%;
+                    background-color: #454659;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    button {
+                        height: 10px;
+                        align-self: flex-end;
+                        margin-right: 70px;
+                        margin-top: 10px;
+                        font-size: 50px;
+                        margin-bottom: 0;
+                        background-color: transparent;
+                        border: 0;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                    svg {
+                        width: 150px;
+                        height: fit-content;
+                      
+                    }
+
+                    .nav-item {
+                        
+                        text-align: center;
+
+                        
+                        a {
+                            font-size: 30px;;   
+                            text-decoration: none;
+                            color:white;   
+                        
+
+                        &:hover {
+                        color:#F3A391;
+                        }
+                        }
+                   
+                    }
+                    
+                    .home {
+                        a {
+                            color:#F3A391;
+                        }
+                    }
+
+                
+                
+                }
+
+                .navMenu.active {
+                    right: 0px;
+                    top: 0;
+                    margin-top: -20px;
+                    padding-bottom: 20px;
+
+
+                    img {
+                        fill: white;
+                       
+                        
+                    }
+                }
+
+                .hamburger {
+                    cursor: pointer;
+                    
+                    .hamburger.active {
+                        opacity: 1;
+                    }
                 svg {
                     width: 80px;
                     height: 40px;
                 }
 
-                .nav-bar {
-                    width: 1000px;
-                    height: 600px;
-                    background-color: #F3A391;
-
-                }
+            }
             }
         }
 
@@ -1095,7 +1177,7 @@ body {
                     width: 300px;
                     height: 500px;
                     top: 420px;
-                    left: 927px;
+                    left: 827px;
                 }
 
                 .block {
@@ -1103,7 +1185,7 @@ body {
                     opacity: 1;
                     position: absolute;
                     top: 420px;
-                    left: 905px;
+                    left: 805px;
                     width: 350px;
                     height: 500px;
                 }
@@ -1116,7 +1198,7 @@ body {
                     width: 320px;
                     height: 420px;
                     top: 460px;
-                    left: 920px;
+                    left: 820px;
                 }
 
                 
@@ -1126,7 +1208,7 @@ body {
                     opacity: 1;
                     position: absolute;
                     top: 100px;
-                    left: 280px;
+                    left: 180px;
                     height: 617px;
                     width: 786px;
                     background-color: #F3A391;
@@ -1224,5 +1306,187 @@ body {
                 }
             }
         }
+
+        footer {
+
+            .nav-contactinfo-newsletter {
+                display: flex;
+                height: 350px;
+                width: 100%;
+                background-color: #e9f3ef;
+                justify-content: space-evenly;
+                text-align: left;
+                font-family: poppins-extralight,poppins,sans-serif;
+                
+
+                .footer-logo {
+                    display: flex;
+                    flex-direction: column;
+                    width: 200px;
+                    text-align: center;
+                    align-self: center;
+
+                
+
+                    svg {
+                        height: 100px;
+                        widtH: 130px;
+                    }
+
+                    .text {
+                        font-size: 20px;
+                        font-weight: 100;
+                        letter-spacing: 6px;
+
+                        a {
+                            color: rgb(66, 67, 79);
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .footer-nav {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 80px;
+                    
+
+                    .nav-heading {
+                        font-size: 17px;
+                        color: rgb(72, 73, 85);
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                        line-height: 14px;
+                        
+                        a {
+                            color: rgb(72, 73, 85);
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+
+                .contact-info {
+                    display: flex;
+                    flex-direction: column;
+                
+                    padding-top: 80px;
+                    
+
+                    p {
+                        font-size: 17px;
+                        color: rgb(72, 73, 85);
+                        margin-bottom: 15px;
+                    }
+
+                    .address {
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                        line-height: 20px;
+                    }
+
+                    .ig-link {
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                        
+                        a {
+                            color: rgb(72, 73, 85);
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .newsletter-registration {
+                    display: flex;
+                    flex-direction: column;
+                
+                    padding-top: 80px;
+                    width: 200px;
+
+                    .registration-heading {
+                        font-size: 17px;
+                        color: rgb(72, 73, 85);
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: rgb(72, 73, 85);
+                    }
+
+                    label {
+                        font-size: 14px;
+                        color: rgb(72, 73, 85);
+                    }
+
+                    .input-part {
+                        display: flex;
+                    
+
+                        input {
+                            margin-top: 20px;
+                            height: 30px;
+                            min-width: 100%;
+                            background-color: #eecdc9;
+                            border: 3px solid red;
+                        }
+
+                        button {
+                            font-size: 17px;
+                            padding: 8px 20px 8px 20px;
+                            height: fit-content;
+                            background-color: rgb(72, 73, 85);
+                            border-radius: 25px;
+                            color: white;
+                            position: relative;
+                            right: 40px;
+                            top: 19px;
+                            border: 2px solid rgb(72, 73, 85);
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-weight: lighter;
+                            }
+                            }
+
+                            &:hover {
+                                button {
+                                    background-color: #F3A391;
+                                    border: 2px solid #F3A391;
+                                    
+
+                                    a {
+                                        color: rgb(72, 73, 85);
+                                        
+                                    }
+                                }
+
+                            }
+
+                    }
+                    
+                }
+               }   
+            
+            .copyright {
+                text-align: center;
+                padding: 25px 0 25px 0;
+                font-size: 14px;
+                color: rgb(72, 73, 85);
+                background-color: #e9f3ef;
+                border-top: 1px solid black;
+
+            }
+            
+            
+            }
+
+            
     }
 }

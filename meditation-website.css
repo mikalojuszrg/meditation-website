@@ -86,22 +86,82 @@ body .main-container .top-bar header .header-right .trial-button:hover button {
 body .main-container .top-bar header .header-right .trial-button:hover button a {
   color: white;
 }
-body .main-container .top-bar nav {
+body .main-container .top-bar .nav-bar {
   background-color: #454659;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body .main-container .top-bar nav svg {
+body .main-container .top-bar .nav-bar .navMenu {
+  position: fixed;
+  right: -100%;
+  z-index: 3;
+  transition: 0.6s;
+  width: 800px;
+  height: 100%;
+  background-color: #454659;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+body .main-container .top-bar .nav-bar .navMenu button {
+  height: 10px;
+  align-self: flex-end;
+  margin-right: 70px;
+  margin-top: 10px;
+  font-size: 50px;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+}
+body .main-container .top-bar .nav-bar .navMenu button a {
+  color: white;
+  text-decoration: none;
+}
+body .main-container .top-bar .nav-bar .navMenu svg {
+  width: 150px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .main-container .top-bar .nav-bar .navMenu .nav-item {
+  text-align: center;
+}
+body .main-container .top-bar .nav-bar .navMenu .nav-item a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+body .main-container .top-bar .nav-bar .navMenu .nav-item a:hover {
+  color: #F3A391;
+}
+body .main-container .top-bar .nav-bar .navMenu .home a {
+  color: #F3A391;
+}
+body .main-container .top-bar .nav-bar .navMenu.active {
+  right: 0px;
+  top: 0;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+body .main-container .top-bar .nav-bar .navMenu.active img {
+  fill: white;
+}
+body .main-container .top-bar .nav-bar .hamburger {
+  cursor: pointer;
+}
+body .main-container .top-bar .nav-bar .hamburger .hamburger.active {
+  opacity: 1;
+}
+body .main-container .top-bar .nav-bar .hamburger svg {
   width: 80px;
   height: 40px;
-}
-body .main-container .top-bar nav .nav-bar {
-  width: 1000px;
-  height: 600px;
-  background-color: #F3A391;
 }
 body .main-container .content {
   display: grid;
@@ -849,14 +909,14 @@ body .main-container .content .approach .meditate {
   width: 300px;
   height: 500px;
   top: 420px;
-  left: 927px;
+  left: 827px;
 }
 body .main-container .content .approach .block {
   z-index: 3;
   opacity: 1;
   position: absolute;
   top: 420px;
-  left: 905px;
+  left: 805px;
   width: 350px;
   height: 500px;
 }
@@ -868,14 +928,14 @@ body .main-container .content .approach .blue-block {
   width: 320px;
   height: 420px;
   top: 460px;
-  left: 920px;
+  left: 820px;
 }
 body .main-container .content .approach .citation {
   z-index: 1;
   opacity: 1;
   position: absolute;
   top: 100px;
-  left: 280px;
+  left: 180px;
   height: 617px;
   width: 786px;
   background-color: #F3A391;
@@ -954,4 +1014,139 @@ body .main-container .content .approach .citation .read-more-button2:hover butto
 }
 body .main-container .content .approach .citation .read-more-button2:hover button a {
   color: rgb(72, 73, 85);
+}
+body .main-container footer .nav-contactinfo-newsletter {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  background-color: #e9f3ef;
+  justify-content: space-evenly;
+  text-align: left;
+  font-family: poppins-extralight, poppins, sans-serif;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-logo {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  align-self: center;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-logo svg {
+  height: 100px;
+  widtH: 130px;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-logo .text {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-logo .text a {
+  color: rgb(66, 67, 79);
+  text-decoration: none;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-nav .nav-heading {
+  font-size: 17px;
+  color: rgb(72, 73, 85);
+  margin-bottom: 25px;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-nav p {
+  font-size: 14px;
+  margin-bottom: 2px;
+  line-height: 14px;
+}
+body .main-container footer .nav-contactinfo-newsletter .footer-nav p a {
+  color: rgb(72, 73, 85);
+  text-decoration: none;
+}
+body .main-container footer .nav-contactinfo-newsletter .contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+body .main-container footer .nav-contactinfo-newsletter .contact-info p {
+  font-size: 17px;
+  color: rgb(72, 73, 85);
+  margin-bottom: 15px;
+}
+body .main-container footer .nav-contactinfo-newsletter .contact-info .address {
+  font-size: 14px;
+  margin-bottom: 2px;
+  line-height: 20px;
+}
+body .main-container footer .nav-contactinfo-newsletter .contact-info .ig-link {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+body .main-container footer .nav-contactinfo-newsletter .contact-info .ig-link a {
+  color: rgb(72, 73, 85);
+  text-decoration: none;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  width: 200px;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .registration-heading {
+  font-size: 17px;
+  color: rgb(72, 73, 85);
+  margin-bottom: 15px;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration p {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(72, 73, 85);
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration label {
+  font-size: 14px;
+  color: rgb(72, 73, 85);
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part {
+  display: flex;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part input {
+  margin-top: 20px;
+  height: 30px;
+  min-width: 100%;
+  background-color: #eecdc9;
+  border: 3px solid red;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part button {
+  font-size: 17px;
+  padding: 8px 20px 8px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(72, 73, 85);
+  border-radius: 25px;
+  color: white;
+  position: relative;
+  right: 40px;
+  top: 19px;
+  border: 2px solid rgb(72, 73, 85);
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part button a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part:hover button {
+  background-color: #F3A391;
+  border: 2px solid #F3A391;
+}
+body .main-container footer .nav-contactinfo-newsletter .newsletter-registration .input-part:hover button a {
+  color: rgb(72, 73, 85);
+}
+body .main-container footer .copyright {
+  text-align: center;
+  padding: 25px 0 25px 0;
+  font-size: 14px;
+  color: rgb(72, 73, 85);
+  background-color: #e9f3ef;
+  border-top: 1px solid black;
 }/*# sourceMappingURL=meditation-website.css.map */

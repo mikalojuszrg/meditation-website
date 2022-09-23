@@ -7,3 +7,11 @@ hamburger.addEventListener("click", () => {
 }
     
     )
+
+let leaves = document.getElementById("leaves");
+
+window.addEventListener('scroll', function() {
+    var value = window.scrollY;
+
+    leaves.style.top = value * 0.1 + 'px';
+})

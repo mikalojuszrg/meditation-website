@@ -10,6 +10,10 @@ body {
         .top-bar {
             display: grid;
             grid-template-columns: auto 100px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 99;
 
             header {
                 display: flex;
@@ -315,6 +319,8 @@ body {
                     // background-attachment: scroll;
                     // background-position: center;
                     background-size: cover;
+                   
+                background-attachment: fixed;
                  
                     svg {
                     position: absolute;
@@ -359,6 +365,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            
+                
 
                 .breez-experience {
                     margin-top: -50px;
@@ -488,10 +496,12 @@ body {
                 z-index: 0;
 
                 .images {
-                   background-image: url('https://static.wixstatic.com/media/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg/v1/fill/w_632,h_762,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_264c86b083454a77bbf323c98a728e1e~mv2.jpg');
+                   background-image: url("background.jpeg");
                    height: 100%;
                    width: 600px;
                    position: relative;
+                   background-attachment: fixed;
+                 
 
                    svg {
                     position: absolute;
@@ -581,6 +591,9 @@ body {
                 grid-template-rows: 650px;
                 margin-top: -150px;
                 z-index: 1;
+                background-attachment: fixed;
+              
+                
                 
                 .text {
                     margin-top: 140px;
@@ -1433,12 +1446,16 @@ body {
                             height: 30px;
                             min-width: 100%;
                             background-color: #eecdc9;
-                            border: 3px solid red;
+                            border:#454659 2px solid;
+
+                            &:active {
+                                border:#ff0000 2px solid;
+                            }
                         }
 
                         button {
                             font-size: 17px;
-                            padding: 8px 20px 8px 20px;
+                            padding: 7px 20px 6px 20px;
                             height: fit-content;
                             background-color: rgb(72, 73, 85);
                             border-radius: 25px;
@@ -1447,6 +1464,7 @@ body {
                             right: 40px;
                             top: 19px;
                             border: 2px solid rgb(72, 73, 85);
+                            cursor: pointer;
 
                             a {
                                 text-decoration: none;

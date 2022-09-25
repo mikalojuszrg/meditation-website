@@ -175,190 +175,219 @@ body .main-container main {
   flex-direction: column;
   align-items: center;
 }
-body .main-container main h3 {
-  font-size: 62px;
-  margin-top: 85px;
-  margin-bottom: 20px;
+body .main-container main .general-info {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  gap: 100px;
 }
-body .main-container main p {
-  font-size: 16px;
-  margin-bottom: 85px;
+body .main-container main .general-info img {
+  width: 50%;
+  height: 100%;
 }
-body .main-container main .challenges {
+body .main-container main .general-info .brief {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+body .main-container main .general-info .brief h3 {
+  font-size: 36px;
+}
+body .main-container main .general-info .brief .numbers {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+body .main-container main .general-info .brief .numbers .days {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container main .general-info .brief .numbers .days p {
+  margin: 0;
+}
+body .main-container main .general-info .brief .numbers .days p:nth-child(2) {
+  font-size: 14px;
+}
+body .main-container main .general-info .brief .numbers .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container main .general-info .brief .numbers .steps p {
+  margin: 0;
+}
+body .main-container main .general-info .brief .numbers .steps p:nth-child(2) {
+  font-size: 14px;
+}
+body .main-container main .general-info .brief .numbers .participants {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container main .general-info .brief .numbers .participants p {
+  margin: 0;
+}
+body .main-container main .general-info .brief .numbers .participants p:nth-child(2) {
+  font-size: 14px;
+}
+body .main-container main .general-info .brief .numbers i {
+  font-size: 30px;
+}
+body .main-container main .general-info .brief button {
+  margin-top: 40px;
+  background-color: #454659;
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+}
+body .main-container main .general-info .brief button a {
+  text-decoration: none;
+  color: white;
+}
+body .main-container main .general-info .brief button:hover {
+  border: #454659 1px solid;
+  background-color: white;
+}
+body .main-container main .general-info .brief button:hover a {
+  color: #454659;
+}
+body .main-container main .main-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body .main-container main .main-section .section-1 {
+  border-bottom: #454659 1px solid;
+  padding-bottom: 40px;
+}
+body .main-container main .main-section .section-1 h4 {
+  font-size: 36px;
+}
+body .main-container main .main-section .section-1 p {
+  margin-bottom: 20px;
+}
+body .main-container main .main-section .section-1 p a {
+  color: rgb(103, 189, 236);
+}
+body .main-container main .main-section .section-1 .admin-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body .main-container main .main-section .section-1 .admin-info p {
+  margin: 0;
+}
+body .main-container main .main-section .section-1 .admin-info i {
+  font-size: 40px;
+  color: gray;
+}
+body .main-container main .main-section .section-2 {
+  border-bottom: #454659 1px solid;
+  padding-bottom: 40px;
+}
+body .main-container main .main-section .section-2 h4 {
+  font-size: 36px;
+}
+body .main-container main .main-section .section-2 p {
+  margin-bottom: 20px;
+}
+body .main-container main .main-section .section-2 p a {
+  color: rgb(103, 189, 236);
+}
+body .main-container main .main-section .section-2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+body .main-container main .main-section .section-2 form input {
+  width: 47%;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+body .main-container main .main-section .section-3 {
+  border-bottom: #454659 1px solid;
+  padding-bottom: 40px;
+}
+body .main-container main .main-section .section-3 h4 {
+  font-size: 36px;
+}
+body .main-container main .main-section .section-3 p {
+  margin-bottom: 20px;
+}
+body .main-container main .main-section .section-3 p a {
+  color: rgb(103, 189, 236);
+}
+body .main-container main .main-section .section-3 .admin-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body .main-container main .main-section .section-3 .admin-info p {
+  margin: 0;
+}
+body .main-container main .main-section .section-3 .admin-info i {
+  font-size: 40px;
+  color: gray;
+}
+body .main-container main .main-section .section-4 {
+  padding-bottom: 100px;
+}
+body .main-container main .main-section .section-4 h4 {
+  font-size: 36px;
+}
+body .main-container main .main-section .section-4 p {
+  margin-bottom: 20px;
+}
+body .main-container main .main-section .section-4 p a {
+  color: rgb(103, 189, 236);
+}
+body .main-container main .main-section .section-4 .social-media {
+  display: flex;
   gap: 30px;
-  width: 80%;
-}
-body .main-container main .challenges .challenge-1 {
-  display: flex;
-  height: 350px;
-  border: #454659 1px solid;
-}
-body .main-container main .challenges .challenge-1 .picture {
-  height: 350px;
-  width: 50%;
   cursor: pointer;
 }
-body .main-container main .challenges .challenge-1 .picture img {
-  width: 100%;
-  height: 100%;
+body .main-container main .main-section .section-4 .social-media i {
+  font-size: 35px;
 }
-body .main-container main .challenges .challenge-1 .info {
-  margin-left: 70px;
+body .main-container main .main-section .section-4 .social-media i:hover {
+  opacity: 0.7;
 }
-body .main-container main .challenges .challenge-1 .info h4 {
-  font-size: 36px;
-  margin-bottom: 3px;
-}
-body .main-container main .challenges .challenge-1 .info .participant {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-body .main-container main .challenges .challenge-1 .info .participant p {
-  margin: 0;
-}
-body .main-container main .challenges .challenge-1 .info .participant i {
-  font-size: 10px;
-}
-body .main-container main .challenges .challenge-1 .info p {
-  margin: 30px 0;
-}
-body .main-container main .challenges .challenge-1 .info button {
+body .main-container main .main-section .section-4 button {
+  margin-top: 40px;
   background-color: #454659;
+  padding: 15px 40px;
   border: 0;
-  padding: 15px 60px;
-  border-radius: 50px;
+  border-radius: 30px;
   font-size: 17px;
   cursor: pointer;
 }
-body .main-container main .challenges .challenge-1 .info button a {
+body .main-container main .main-section .section-4 button a {
   text-decoration: none;
   color: white;
 }
-body .main-container main .challenges .challenge-1 .info button:hover {
-  background-color: white;
+body .main-container main .main-section .section-4 button:hover {
   border: #454659 1px solid;
+  background-color: white;
 }
-body .main-container main .challenges .challenge-1 .info button:hover a {
+body .main-container main .main-section .section-4 button:hover a {
   color: #454659;
 }
-body .main-container main .challenges .challenge-2 {
-  display: flex;
-  height: 350px;
-  border: #454659 1px solid;
-}
-body .main-container main .challenges .challenge-2 .picture {
-  height: 350px;
-  width: 50%;
-  cursor: pointer;
-}
-body .main-container main .challenges .challenge-2 .picture img {
-  width: 100%;
-  height: 100%;
-}
-body .main-container main .challenges .challenge-2 .info {
-  width: 50%;
-}
-body .main-container main .challenges .challenge-2 .info h4 {
-  margin-left: 70px;
-  font-size: 36px;
-  margin-bottom: 3px;
-}
-body .main-container main .challenges .challenge-2 .info .participant {
-  margin-left: 70px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-body .main-container main .challenges .challenge-2 .info .participant p {
-  margin: 0;
-}
-body .main-container main .challenges .challenge-2 .info .participant i {
-  font-size: 10px;
-}
-body .main-container main .challenges .challenge-2 .info p {
-  margin: 30px 0;
-  margin-left: 70px;
-}
-body .main-container main .challenges .challenge-2 .info button {
-  background-color: #454659;
-  border: 0;
-  padding: 15px 60px;
-  border-radius: 50px;
-  font-size: 17px;
-  cursor: pointer;
-  margin-left: 70px;
-}
-body .main-container main .challenges .challenge-2 .info button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .challenges .challenge-2 .info button:hover {
-  background-color: white;
-  border: #454659 1px solid;
-}
-body .main-container main .challenges .challenge-2 .info button:hover a {
-  color: #454659;
-}
-body .main-container main .challenges .challenge-3 {
-  display: flex;
-  height: 350px;
-  border: #454659 1px solid;
-  margin-bottom: 100px;
-}
-body .main-container main .challenges .challenge-3 .picture {
-  height: 350px;
-  width: 50%;
-  cursor: pointer;
-}
-body .main-container main .challenges .challenge-3 .picture img {
-  width: 100%;
-  height: 100%;
-}
-body .main-container main .challenges .challenge-3 .info {
-  margin-left: 70px;
-}
-body .main-container main .challenges .challenge-3 .info h4 {
-  font-size: 36px;
-  margin-bottom: 3px;
-}
-body .main-container main .challenges .challenge-3 .info .participant {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-body .main-container main .challenges .challenge-3 .info .participant p {
-  margin: 0;
-}
-body .main-container main .challenges .challenge-3 .info .participant i {
-  font-size: 10px;
-}
-body .main-container main .challenges .challenge-3 .info p {
-  margin: 30px 0;
-}
-body .main-container main .challenges .challenge-3 .info button {
-  background-color: #454659;
-  border: 0;
-  padding: 15px 60px;
-  border-radius: 50px;
-  font-size: 17px;
-  cursor: pointer;
-}
-body .main-container main .challenges .challenge-3 .info button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .challenges .challenge-3 .info button:hover {
-  background-color: white;
-  border: #454659 1px solid;
-}
-body .main-container main .challenges .challenge-3 .info button:hover a {
-  color: #454659;
+body .main-container main .main-section .section-4 p {
+  margin-top: 40px;
 }
 body .main-container footer .nav-contactinfo-newsletter {
   display: flex;
@@ -498,4 +527,4 @@ body .main-container footer .copyright {
   color: rgb(72, 73, 85);
   background-color: #e9f3ef;
   border-top: 1px solid black;
-}/*# sourceMappingURL=challenges.css.map */
+}/*# sourceMappingURL=session-page.css.map */

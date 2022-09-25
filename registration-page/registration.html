@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="booking-page.css">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
     <script src="https://kit.fontawesome.com/db5bd150d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -81,97 +81,47 @@
             <div class="back-button">
                 <button><a href="/schedule-page/schedule-page.html"><i class="fa-solid fa-angle-left"></i>Back</a></button>
             </div>
-            <div class="heading">
-                <h3>Mindfulness</h3>
-                <p>Check out our availability and book the date and time that works for you</p>
-            </div>
             <div class="content">
-                <div class="time-date">
-                    <div class="title">
-                        <h4>Select a Date and Time</h4>
-                        <p>Timezone:
-                            Pacific Daylight Time (PDT)</p>
+                <div class="details">
+                    <div class="heading">
+                        <h4>Fill out your details</h4>
+                        <p>Tell us a bit about yourself</p>
+                        <p>Already have an account? 
+                            <a>Log In</a>
+                             for faster booking.</p>
                     </div>
-                    <div class="selection">
-                        <div class="date">
-                            <p>
-                                <i class="fa-solid fa-angle-left"></i>
-                                September 2022
-                                <i class="fa-solid fa-angle-right"></i>
-                            </p>
-                            <div class="calendar">
-                                <div class="days">
-                                    <div><button>Sun</button></div>
-                                    <div><button class="inactive">28</button></div>
-                                    <div><button>4</button></div>
-                                    <div><button>11</button></div>
-                                    <div><button>18</button></div>
-                                    <div><button>25</button></div>
-                                    <div><button class="inactive">2</button></div>
+                    <div class="pay-form">
+                        <form action ="https://www.hashemian.com/tools/form-post-tester.php/Mik123" method="POST">
+                            <div class="name-email">
+                                <div class="name">
+                                    <label for="name">Name*</label>
+                                    <div class="input-email">
+                                        <input type="text" name="name" id="name" required>                  
+                                    </div>
                                 </div>
-                                <div class="days-1">
-                                    <div><button>Mon</button></div>
-                                    <div><button class="inactive">29</button></div>
-                                    <div><button>5</button></div>
-                                    <div><button>12</button></div>
-                                    <div><button>19</button></div>
-                                    <div><button>26</button></div>
-                                    <div><button class="inactive">3</button></div>
-                                    
+                                      
+                                <div class="email">
+                                    <label for="email">Email*</label>
+                                    <div class="input-email">
+                                        <input type="email" name="email" id="email" required>              
+                                    </div>
                                 </div>
-                                <div class="days-2">
-                                    <div><button>Tue</button></div>
-                                    <div><button class="inactive">30</button></div>
-                                    <div><button>6</button></div>
-                                    <div><button>13</button></div>
-                                    <div><button>20</button></div>
-                                    <div><button>27</button></div>
-                                    <div><button class="inactive">4</button></div>
+                            </div>
+
+                            <div class="phone-number">
+                                <label for="number">Phone Number</label>
+                                <div class="input-number">
+                                    <input type="number" name="number" id="number" >                  
                                 </div>
-                                <div class="days-3">
-                                    <div><button>Wed</button></div>
-                                    <div><button class="inactive">31</button></div>
-                                    <div><button>7</button></div>
-                                    <div><button>14</button></div>
-                                    <div><button>21</button></div>
-                                    <div><button>28</button></div>
-                                    <div><button class="inactive">5</button></div>
-                                    
-                                </div>
-                                <div class="days-4">
-                                    <div><button>Thu</button></div>
-                                    <div><button>1</button></div>
-                                    <div><button>8</button></div>
-                                    <div><button>15</button></div>
-                                    <div><button>22</button></div>
-                                    <div><button>29</button></div>
-                                    <div><button class="inactive">6</button></div>
-                                </div>
-                                <div class="days-5">
-                                    <div><button>Fri</button></div>
-                                    <div><button>2</button></div>
-                                    <div><button>9</button></div>
-                                    <div><button>16</button></div>
-                                    <div><button>23</button></div>
-                                    <div><button>30</button></div>
-                                    <div><button class="inactive">7</button></div>
-                                </div>
-                                <div class="days-6">
-                                    <div><button>Sat</button></div>
-                                    <div><button>3</button></div>
-                                    <div><button>10</button></div>
-                                    <div><button>17</button></div>
-                                    <div><button class="active">24</button></div>
-                                    <div><button class="inactive">1</button></div>
-                                    <div><button class="inactive">8</button></div>
+                            </div>
+
+                            <div class="text-area">
+                                <label for="text-area">Add Your Message</label>
+                                <div class="text-area">
+                                    <textarea name="text-area" id="text-area" cols="50" rows="4"></textarea>           
                                 </div>
                             </div>
                         
-                        </div>
-                        <div class="availability">
-                            <p>Saturday, Semptember 24<br>No availability</p>
-                            <button>Check Next Availability</button>
-                        </div>
                     </div>
                 </div>
 
@@ -180,9 +130,22 @@
                         <h4>Booking Summary</h4>
                     </div>
                     <div class="booking-details">
-                        <p>Minduflness<br>$9</p>
-                       
-                        <button><a href="/registration-page/registration.html">Next</a></button>
+                        <p>Minduflness<br>September 26, 2022, 8:00 am</p>
+                        <p>Terry A Francois Boulevard<br>
+
+                            Staff Member #1<br>
+                            
+                            45 min</p>
+                    </div>
+
+                    <div class="payment-details">
+                        <p>Payment Details</p>
+                        <div class="total">
+                            <p>Total</p>
+                            <p>$9</p>
+                        </div>
+                        <button type="submit">Pay Now</button>
+                    </form>
                     </div>
                 </div>
             </div>

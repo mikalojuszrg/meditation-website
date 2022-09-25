@@ -183,11 +183,7 @@ body {
                    
                     }
                     
-                    .schedule {
-                        a {
-                            color:#F3A391;
-                        }
-                    }
+                  
 
                 
                 
@@ -225,299 +221,223 @@ body {
         main {
             background-color: #e9efff;
             width: 100%;
-            min-height: 1000px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            height: 700px;
             color:#454659;
+                .back-button {
 
-            h2 {
-                font-size: 62px;
-                margin-bottom: 0;;
-                margin-top: 100px;
-            }
-
-            .subheading {
-                font-size: 18px;
-            }
-
-            .selections {
-                margin-top: 80px;
-                display: flex;
-                gap: 10px;
-                
-                button {
-                    border:#454659 1px solid;
-                    padding: 10px 20px;
-                    border-radius: 30px;
-                    font-size: 15px;
-                    background-color: white;
-                    cursor: pointer;
-                }
-
-                .all {
-                    background-color: #454659;
-                    color: white;
-                }
-
-                .beginners, .workshops {
-                    &:hover {
-                        background-color: #454659;
-                    color: white;
-                    }
-                }
-
-            }
-
-            .selections-list-all {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-                margin-top: 50px;
-                margin-bottom: 100px;
-
-                .selection-1 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
+                    i {
+                        margin-right: 10px;
                     }
 
                     button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
+                        border: 0;
+                        background-color: transparent;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        font-size: 17px;
 
                         a {
                             text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
+                            color:#454659;
                         }
                     }
                 }
 
-                .selection-2 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+                .heading {
+                    margin-left: 70px;
 
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
+                    h3 {
+                        font-size: 34px;
+                    }
+
+                    p {
+                        margin-top: -15px;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    width: 100%;
+                    gap: 50px;
+
+                    .time-date {
+                        display: flex;
+                        flex-direction: column;
+                        width: 70%;
+                        margin-left: 70px;
+
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px solid black;
+                            align-items: center;
+
+                            p {
+                                font-size: 14px;
+
+                                &:hover {
+                                    opacity: 0.8;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .selection {
+                            display: flex;
+                            gap: 30px;
+                            
+                            
+
+                            .date {
+                                display: flex;
+                                flex-direction: column;
+                                width: 50%;
+                                height: 500px;
+                                margin-left: 20px;
+
+                                i {
+                                    margin-right: 10px;
+                                    margin-left: 10px;
+                                }
+
+                                p {
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                    margin-top: 25px;
+                                    font-size: 17px;
+                                }
+                                
+
+                                .calendar {
+                                    display: grid;
+                                    height: 400px;
+                                    grid-template-rows: 1fr;
+                                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                                   
+                                    justify-content: center;
+
+                                    .days, .days-4, .days-1, .days-2, .days-3, .days-5, .days-6 {
+                                        
+                                         div {
+                                            margin-bottom: 10px;
+
+                                            button {
+                                                border: 0;
+                                                background-color: transparent;
+                                                width: 40px;
+                                                height: 40px;
+                                                text-align: center;
+                                                font-size: 17px;
+
+                                                &:hover {
+                                                   
+                                                   background-color: #a1a1a2;
+                                                   border-radius: 50%;
+                                                 
+                                                    
+                                               
+                                             
+                                                    
+                                                   
+                                                }
+                                            }
+
+                                        }
+
+                                            .inactive {
+                                                color:rgb(190, 187, 187);
+
+                                                &:hover {
+                                                    background-color: transparent;
+                                                    border: 0;
+                                                }
+
+                                            }
+
+                                            .active {
+                                                background-color: #F3A391;
+                                                border-radius: 50%;
+                                                
+                                            }
+                                         }
+                                    
+
+                                    
+                                    
+                                }
+                            }
+
+                            .availability {
+                                width: 50%;
+                                
+                                
+                                p {
+                                    margin-top: 25px;
+                                    line-height: 20px;
+                                    color: black;
+                                }
+
+                                button {
+                                    background-color: #454659;
+                                    color: white;
+                                    padding: 15px 45px;
+                                    border-radius: 30px;
+                                    margin-top: 30px;
+                                    border: 0;
+                                    font-size: 17px;
+
+                                    &:hover {
+                                        background-color: white;
+                                        border:#454659 1px solid;
+                                        color:#454659;
+                                        cursor: pointer;
+                                    }
+                                }
+                                
+                            }
+
+                        }
+                    }
+
+                    .booking-summary {
+                        width: 15%;
+                        
+                        .title {
+                            border-bottom: #454659 1px solid;
                         }
 
                         p {
-                            margin-top: -15px;
+                           
+                            margin-top: 25px;
+                            line-height: 20px;
+                            
                         }
-                    }
 
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
+                        button {
+                            background-color: #454659;
                             color: white;
-                        }
+                            padding: 15px 100px;
+                            border-radius: 30px;
+                            margin-top: 30px;
+                            border: 0;
+                            font-size: 17px;
 
-                        &:hover {
-                            opacity: 0.8;
+                            &:hover {
+                                background-color: white;
+                                border:#454659 1px solid;
+                                color:#454659;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
 
-                .selection-3 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-
-                .selection-4 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-
-                .selection-5 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    border-bottom: #454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
             }
 
            
 
             
-        }
+        
 
         footer {
 

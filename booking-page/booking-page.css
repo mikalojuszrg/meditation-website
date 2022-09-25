@@ -147,9 +147,6 @@ body .main-container .top-bar .nav-bar .navMenu .nav-item a {
 body .main-container .top-bar .nav-bar .navMenu .nav-item a:hover {
   color: #F3A391;
 }
-body .main-container .top-bar .nav-bar .navMenu .schedule a {
-  color: #F3A391;
-}
 body .main-container .top-bar .nav-bar .navMenu.active {
   right: 0px;
   top: 0;
@@ -172,254 +169,157 @@ body .main-container .top-bar .nav-bar .hamburger svg {
 body .main-container main {
   background-color: #e9efff;
   width: 100%;
-  min-height: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 700px;
   color: #454659;
 }
-body .main-container main h2 {
-  font-size: 62px;
-  margin-bottom: 0;
-  margin-top: 100px;
+body .main-container main .back-button i {
+  margin-right: 10px;
 }
-body .main-container main .subheading {
-  font-size: 18px;
+body .main-container main .back-button button {
+  border: 0;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 17px;
 }
-body .main-container main .selections {
-  margin-top: 80px;
+body .main-container main .back-button button a {
+  text-decoration: none;
+  color: #454659;
+}
+body .main-container main .heading {
+  margin-left: 70px;
+}
+body .main-container main .heading h3 {
+  font-size: 34px;
+}
+body .main-container main .heading p {
+  margin-top: -15px;
+}
+body .main-container main .content {
   display: flex;
-  gap: 10px;
+  width: 100%;
+  gap: 50px;
 }
-body .main-container main .selections button {
-  border: #454659 1px solid;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: white;
-  cursor: pointer;
-}
-body .main-container main .selections .all {
-  background-color: #454659;
-  color: white;
-}
-body .main-container main .selections .beginners:hover, body .main-container main .selections .workshops:hover {
-  background-color: #454659;
-  color: white;
-}
-body .main-container main .selections-list-all {
+body .main-container main .content .time-date {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+  margin-left: 70px;
+}
+body .main-container main .content .time-date .title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
 }
-body .main-container main .selections-list-all .selection-1 {
-  width: 65%;
+body .main-container main .content .time-date .title p {
+  font-size: 14px;
+}
+body .main-container main .content .time-date .title p:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+body .main-container main .content .time-date .selection {
   display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  gap: 30px;
 }
-body .main-container main .selections-list-all .selection-1 .title {
-  width: 450px;
+body .main-container main .content .time-date .selection .date {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 500px;
+  margin-left: 20px;
 }
-body .main-container main .selections-list-all .selection-1 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
+body .main-container main .content .time-date .selection .date i {
+  margin-right: 10px;
+  margin-left: 10px;
 }
-body .main-container main .selections-list-all .selection-1 .title p {
-  margin-top: -15px;
+body .main-container main .content .time-date .selection .date p {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-size: 17px;
 }
-body .main-container main .selections-list-all .selection-1 .details {
-  padding-top: 0;
-  margin-top: -10px;
+body .main-container main .content .time-date .selection .date .calendar {
+  display: grid;
+  height: 400px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
-body .main-container main .selections-list-all .selection-1 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
+body .main-container main .content .time-date .selection .date .calendar .days div, body .main-container main .content .time-date .selection .date .calendar .days-4 div, body .main-container main .content .time-date .selection .date .calendar .days-1 div, body .main-container main .content .time-date .selection .date .calendar .days-2 div, body .main-container main .content .time-date .selection .date .calendar .days-3 div, body .main-container main .content .time-date .selection .date .calendar .days-5 div, body .main-container main .content .time-date .selection .date .calendar .days-6 div {
+  margin-bottom: 10px;
+}
+body .main-container main .content .time-date .selection .date .calendar .days div button, body .main-container main .content .time-date .selection .date .calendar .days-4 div button, body .main-container main .content .time-date .selection .date .calendar .days-1 div button, body .main-container main .content .time-date .selection .date .calendar .days-2 div button, body .main-container main .content .time-date .selection .date .calendar .days-3 div button, body .main-container main .content .time-date .selection .date .calendar .days-5 div button, body .main-container main .content .time-date .selection .date .calendar .days-6 div button {
+  border: 0;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+}
+body .main-container main .content .time-date .selection .date .calendar .days div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-4 div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-1 div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-2 div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-3 div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-5 div button:hover, body .main-container main .content .time-date .selection .date .calendar .days-6 div button:hover {
+  background-color: #a1a1a2;
+  border-radius: 50%;
+}
+body .main-container main .content .time-date .selection .date .calendar .days .inactive, body .main-container main .content .time-date .selection .date .calendar .days-4 .inactive, body .main-container main .content .time-date .selection .date .calendar .days-1 .inactive, body .main-container main .content .time-date .selection .date .calendar .days-2 .inactive, body .main-container main .content .time-date .selection .date .calendar .days-3 .inactive, body .main-container main .content .time-date .selection .date .calendar .days-5 .inactive, body .main-container main .content .time-date .selection .date .calendar .days-6 .inactive {
+  color: rgb(190, 187, 187);
+}
+body .main-container main .content .time-date .selection .date .calendar .days .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-4 .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-1 .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-2 .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-3 .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-5 .inactive:hover, body .main-container main .content .time-date .selection .date .calendar .days-6 .inactive:hover {
+  background-color: transparent;
+  border: 0;
+}
+body .main-container main .content .time-date .selection .date .calendar .days .active, body .main-container main .content .time-date .selection .date .calendar .days-4 .active, body .main-container main .content .time-date .selection .date .calendar .days-1 .active, body .main-container main .content .time-date .selection .date .calendar .days-2 .active, body .main-container main .content .time-date .selection .date .calendar .days-3 .active, body .main-container main .content .time-date .selection .date .calendar .days-5 .active, body .main-container main .content .time-date .selection .date .calendar .days-6 .active {
+  background-color: #F3A391;
+  border-radius: 50%;
+}
+body .main-container main .content .time-date .selection .availability {
+  width: 50%;
+}
+body .main-container main .content .time-date .selection .availability p {
+  margin-top: 25px;
+  line-height: 20px;
+  color: black;
+}
+body .main-container main .content .time-date .selection .availability button {
   background-color: #454659;
   color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-1 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-1 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-2 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-2 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-2 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-2 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-2 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-2 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding: 15px 45px;
   border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
+  margin-top: 30px;
+  border: 0;
+  font-size: 17px;
 }
-body .main-container main .selections-list-all .selection-2 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-2 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-3 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-3 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-3 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-3 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-3 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-3 button {
+body .main-container main .content .time-date .selection .availability button:hover {
+  background-color: white;
   border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
+  color: #454659;
   cursor: pointer;
-  padding: 13px 35px;
 }
-body .main-container main .selections-list-all .selection-3 button a {
-  text-decoration: none;
-  color: white;
+body .main-container main .content .booking-summary {
+  width: 15%;
 }
-body .main-container main .selections-list-all .selection-3 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-4 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-4 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-4 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-4 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-4 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-4 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-4 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-4 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-5 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
+body .main-container main .content .booking-summary .title {
   border-bottom: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
-body .main-container main .selections-list-all .selection-5 .title {
-  width: 450px;
+body .main-container main .content .booking-summary p {
+  margin-top: 25px;
+  line-height: 20px;
 }
-body .main-container main .selections-list-all .selection-5 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-5 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-5 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-5 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
+body .main-container main .content .booking-summary button {
   background-color: #454659;
   color: white;
+  padding: 15px 100px;
+  border-radius: 30px;
+  margin-top: 30px;
+  border: 0;
+  font-size: 17px;
+}
+body .main-container main .content .booking-summary button:hover {
+  background-color: white;
+  border: #454659 1px solid;
+  color: #454659;
   cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-5 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-5 button:hover {
-  opacity: 0.8;
 }
 body .main-container footer .nav-contactinfo-newsletter {
   display: flex;
@@ -559,4 +459,4 @@ body .main-container footer .copyright {
   color: rgb(72, 73, 85);
   background-color: #e9f3ef;
   border-top: 1px solid black;
-}/*# sourceMappingURL=schedule-page.css.map */
+}/*# sourceMappingURL=booking-page.css.map */

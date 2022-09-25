@@ -147,9 +147,6 @@ body .main-container .top-bar .nav-bar .navMenu .nav-item a {
 body .main-container .top-bar .nav-bar .navMenu .nav-item a:hover {
   color: #F3A391;
 }
-body .main-container .top-bar .nav-bar .navMenu .schedule a {
-  color: #F3A391;
-}
 body .main-container .top-bar .nav-bar .navMenu.active {
   right: 0px;
   top: 0;
@@ -172,289 +169,128 @@ body .main-container .top-bar .nav-bar .hamburger svg {
 body .main-container main {
   background-color: #e9efff;
   width: 100%;
-  min-height: 1000px;
+  height: 1000px;
+  color: #454659;
+  display: flex;
+}
+body .main-container main .general-info {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: #454659;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-body .main-container main h2 {
+body .main-container main .general-info h3 {
   font-size: 62px;
-  margin-bottom: 0;
-  margin-top: 100px;
 }
-body .main-container main .subheading {
+body .main-container main .general-info .subheading {
+  font-size: 20px;
+}
+body .main-container main .general-info .info-box {
+  display: flex;
+  height: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 5px;
+}
+body .main-container main .general-info .info-box p {
+  background-color: #F3A391;
+  padding: 20px 15px;
+}
+body .main-container main .general-info button {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: #454659;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .main-container main .general-info button a {
+  text-decoration: none;
+  color: white;
+}
+body .main-container main .general-info button:hover {
+  background-color: white;
+  border: #454659 1px solid;
+}
+body .main-container main .general-info button:hover a {
+  color: rgb(66, 67, 79);
+}
+body .main-container main .general-info .lessons-info, body .main-container main .general-info .contact-details {
+  width: 90%;
+  margin-top: 20px;
+}
+body .main-container main .general-info h4 {
   font-size: 18px;
 }
-body .main-container main .selections {
-  margin-top: 80px;
-  display: flex;
-  gap: 10px;
+body .main-container main .upcoming-sessions {
+  width: 50%;
+  margin-top: 20px;
 }
-body .main-container main .selections button {
+body .main-container main .upcoming-sessions .session-box table {
+  width: 90%;
+  height: 75%;
   border: #454659 1px solid;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: white;
-  cursor: pointer;
+  border-collapse: collapse;
+  text-align: left;
 }
-body .main-container main .selections .all {
-  background-color: #454659;
-  color: white;
-}
-body .main-container main .selections .beginners:hover, body .main-container main .selections .workshops:hover {
-  background-color: #454659;
-  color: white;
-}
-body .main-container main .selections-list-all {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-body .main-container main .selections-list-all .selection-1 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-1 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-1 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-1 .title h3 a {
-  text-decoration: none;
-  color: black;
-}
-body .main-container main .selections-list-all .selection-1 .title h3 a:hover {
-  opacity: 0.6;
-}
-body .main-container main .selections-list-all .selection-1 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-1 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-1 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-1 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-1 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-2 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-2 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-2 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-2 .title h3 a {
-  text-decoration: none;
-  color: black;
-}
-body .main-container main .selections-list-all .selection-2 .title h3 a:hover {
-  opacity: 0.6;
-}
-body .main-container main .selections-list-all .selection-2 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-2 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-2 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-2 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-2 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-3 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-3 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-3 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-3 .title h3 a {
-  text-decoration: none;
-  color: black;
-}
-body .main-container main .selections-list-all .selection-3 .title h3 a:hover {
-  opacity: 0.6;
-}
-body .main-container main .selections-list-all .selection-3 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-3 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-3 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-3 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-3 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-4 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-body .main-container main .selections-list-all .selection-4 .title {
-  width: 450px;
-}
-body .main-container main .selections-list-all .selection-4 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
-}
-body .main-container main .selections-list-all .selection-4 .title h3 a {
-  text-decoration: none;
-  color: black;
-}
-body .main-container main .selections-list-all .selection-4 .title h3 a:hover {
-  opacity: 0.6;
-}
-body .main-container main .selections-list-all .selection-4 .title p {
-  margin-top: -15px;
-}
-body .main-container main .selections-list-all .selection-4 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-4 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
-  background-color: #454659;
-  color: white;
-  cursor: pointer;
-  padding: 13px 35px;
-}
-body .main-container main .selections-list-all .selection-4 button a {
-  text-decoration: none;
-  color: white;
-}
-body .main-container main .selections-list-all .selection-4 button:hover {
-  opacity: 0.8;
-}
-body .main-container main .selections-list-all .selection-5 {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  border-top: #454659 1px solid;
+body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(1) td:nth-child(3), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(1) td:nth-child(4), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(1) td:nth-child(2), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(3) td:nth-child(3), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(3) td:nth-child(4), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(3) td:nth-child(2), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(5) td:nth-child(3), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(5) td:nth-child(4), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(5) td:nth-child(2), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(6) td:nth-child(3), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(6) td:nth-child(4), body .main-container main .upcoming-sessions .session-box table tbody tr:nth-child(6) td:nth-child(2) {
   border-bottom: #454659 1px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
-body .main-container main .selections-list-all .selection-5 .title {
-  width: 450px;
+body .main-container main .upcoming-sessions .session-box table tbody tr td:first-child {
+  width: 5%;
 }
-body .main-container main .selections-list-all .selection-5 .title h3 {
-  font-size: 36px;
-  margin-top: 0;
+body .main-container main .upcoming-sessions .session-box table tbody tr td:last-child {
+  width: 5%;
 }
-body .main-container main .selections-list-all .selection-5 .title h3 a {
-  text-decoration: none;
-  color: black;
+body .main-container main .upcoming-sessions .session-box table tbody tr td:nth-child(3) {
+  font-size: 14px;
+  color: #757682;
+  text-align: start;
+  width: 35%;
+  border-bottom: 1px solid black;
 }
-body .main-container main .selections-list-all .selection-5 .title h3 a:hover {
-  opacity: 0.6;
+body .main-container main .upcoming-sessions .session-box table tbody tr td:nth-child(4) {
+  font-size: 14px;
+  color: rgb(66, 67, 79);
+  text-align: start;
+  padding-top: 15px;
+  width: 25%;
+  border-bottom: 1px solid black;
 }
-body .main-container main .selections-list-all .selection-5 .title p {
-  margin-top: -15px;
+body .main-container main .upcoming-sessions p:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
-body .main-container main .selections-list-all .selection-5 .details {
-  padding-top: 0;
-  margin-top: -10px;
-}
-body .main-container main .selections-list-all .selection-5 button {
-  border: #454659 1px solid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 30px;
-  font-size: 15px;
+body .main-container main .upcoming-sessions button {
+  margin-top: 20px;
+  border: 0;
   background-color: #454659;
   color: white;
-  cursor: pointer;
-  padding: 13px 35px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 17px;
 }
-body .main-container main .selections-list-all .selection-5 button a {
+body .main-container main .upcoming-sessions button a {
   text-decoration: none;
   color: white;
 }
-body .main-container main .selections-list-all .selection-5 button:hover {
-  opacity: 0.8;
+body .main-container main .upcoming-sessions button:hover {
+  background-color: white;
+  border: #454659 1px solid;
+}
+body .main-container main .upcoming-sessions button:hover a {
+  color: rgb(66, 67, 79);
 }
 body .main-container footer .nav-contactinfo-newsletter {
   display: flex;
@@ -594,4 +430,4 @@ body .main-container footer .copyright {
   color: rgb(72, 73, 85);
   background-color: #e9f3ef;
   border-top: 1px solid black;
-}/*# sourceMappingURL=schedule-page.css.map */
+}/*# sourceMappingURL=activity.css.map */

@@ -183,11 +183,7 @@ body {
                    
                     }
                     
-                    .schedule {
-                        a {
-                            color:#F3A391;
-                        }
-                    }
+                  
 
                 
                 
@@ -225,345 +221,174 @@ body {
         main {
             background-color: #e9efff;
             width: 100%;
-            min-height: 1000px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            height: 1000px;
             color:#454659;
-
-            h2 {
-                font-size: 62px;
-                margin-bottom: 0;;
-                margin-top: 100px;
-            }
-
-            .subheading {
-                font-size: 18px;
-            }
-
-            .selections {
-                margin-top: 80px;
-                display: flex;
-                gap: 10px;
+            display: flex;
                 
-                button {
-                    border:#454659 1px solid;
-                    padding: 10px 20px;
-                    border-radius: 30px;
-                    font-size: 15px;
-                    background-color: white;
-                    cursor: pointer;
-                }
-
-                .all {
-                    background-color: #454659;
-                    color: white;
-                }
-
-                .beginners, .workshops {
-                    &:hover {
-                        background-color: #454659;
-                    color: white;
-                    }
-                }
-
-            }
-
-            .selections-list-all {
+            .general-info {
+                width: 50%;
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-                align-items: center;
-                margin-top: 50px;
-                margin-bottom: 100px;
+                color:#454659;
+                margin-left: 40px;
+                margin-right: 40px;
 
-                .selection-1 {
-                    width: 65%;
+                h3 {
+                    font-size: 62px;
+                }
+
+                .subheading {
+                    font-size: 20px;
+                }
+
+                .info-box {
                     display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+                    height: 40px;
+                    width: fit-content;
+                    height: fit-content;
+                    gap: 5px;
 
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
+                    p {
+                        background-color: #F3A391;
+                        padding: 20px 15px;
 
-                            a {
-                                text-decoration: none;
-                                color: black;
+                    }
+                }
 
-                                &:hover {
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
+                button {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    border: 0;
+                    background-color: #454659;
+                    color: white;
+                    padding: 15px 40px;
+                    border-radius: 30px;
+                    font-size: 17px;
+                    width: fit-content;
 
-                        p {
-                            margin-top: -15px;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: white
                     }
 
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
+                    &:hover {
+                        background-color: white;
                         border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
 
                         a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
+                            color:rgb(66, 67, 79);
                         }
                     }
                 }
 
-                .selection-2 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+                .lessons-info, .contact-details {
+                    width: 90%;
+                    margin-top: 20px;
+                }
 
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
+                h4 {
+                        font-size: 18px;
+                    }
+               
+                }
 
-                            a {
-                                text-decoration: none;
-                                color: black;
+            .upcoming-sessions {
+                width: 50%;
+                margin-top: 20px;
+                
 
-                                &:hover {
-                                    opacity: 0.6;
+                .session-box {
+                    table {
+                        width: 90%;
+                        height: 75%;
+                        border: #454659 1px solid;        
+                        border-collapse:collapse;
+                        text-align:left;
+
+                        tbody {
+                            
+                            tr {
+
+                                &:nth-child(1), &:nth-child(3), &:nth-child(5), &:nth-child(6)   {
+                                    
+                                    td {
+                                        &:nth-child(3), &:nth-child(4),  &:nth-child(2) {
+                                            border-bottom: #454659 1px solid;
+                                        }
+                                        
+                                    }
+                                }
+
+                                td {
+                                    
+                                    &:first-child {
+                                        width: 5%;
+                                    }
+
+                                    &:last-child {
+                                        width: 5%;
+                                    }
+
+                                    &:nth-child(3){
+                                        font-size: 14px;
+                                        color:#757682;
+                                        text-align: start;
+                                        width: 35%;
+                                        border-bottom: 1px solid black;
+                                        
+                                    }
+
+                                    &:nth-child(4){
+                                        font-size: 14px;
+                                        color:rgb(66, 67, 79);
+                                        text-align: start;
+                                        padding-top: 15px;
+                                        width: 25%;
+                                        border-bottom: 1px solid black;
+                                        
+                                    }
+
                                 }
                             }
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
                         }
                     }
                 }
 
-                .selection-3 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-
-                            a {
-                                text-decoration: none;
-                                color: black;
-
-                                &:hover {
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
+                p {
+                    &:hover {
+                        opacity: 0.7;
                         cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
                     }
                 }
 
-                .selection-4 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+                button {
+                    margin-top: 20px;
+                    border: 0;
+                    background-color: #454659;
+                    color: white;
+                    padding: 15px 40px;
+                    border-radius: 30px;
+                    font-size: 17px;
 
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-
-                            a {
-                                text-decoration: none;
-                                color: black;
-
-                                &:hover {
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: white
                     }
 
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
+                    &:hover {
+                        background-color: white;
                         border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
 
                         a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-
-                .selection-5 {
-                    width: 65%;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top:#454659 1px solid;
-                    border-bottom: #454659 1px solid;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-
-                    .title {
-                        width: 450px;
-                        h3 {
-                            font-size: 36px;
-                            margin-top: 0;
-
-                            a {
-                                text-decoration: none;
-                                color: black;
-
-                                &:hover {
-                                    opacity: 0.6;
-                                }
-                            }
-                        }
-
-                        p {
-                            margin-top: -15px;
-                        }
-                    }
-
-                    .details {
-                       
-                        padding-top: 0;
-                        margin-top: -10px;
-                    }
-
-                    button {
-                        border:#454659 1px solid;
-                        height: fit-content;
-                        border-radius: 30px;
-                        font-size: 15px;
-                        background-color: #454659;
-                        color: white;
-                        cursor: pointer;
-                        padding: 13px 35px;
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
+                            color:rgb(66, 67, 79);
                         }
                     }
                 }
             }
 
-           
-
-            
         }
 
+        
         footer {
 
             .nav-contactinfo-newsletter {

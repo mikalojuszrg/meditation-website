@@ -14,12 +14,10 @@ body {
             top: 0;
             background-color: white;
             z-index: 99;
-
             header {
                 display: flex;
                 height: 80px;
                
-
                 .header-left {
                     display: flex;
                     background-color: rgb(227,235,251);
@@ -112,7 +110,7 @@ body {
 
                        
                 }
-                
+
             }
             
 
@@ -421,6 +419,7 @@ body {
                             width: 50%;
                             margin: 0 auto;
                         }
+
                     }
 
                     .second {
@@ -484,6 +483,8 @@ body {
                     }
 
                 }
+
+
             }
 
             .registration {
@@ -1501,8 +1502,8 @@ body {
             }
             
             
-            }
+            }       
 
-            
     }
+
 }

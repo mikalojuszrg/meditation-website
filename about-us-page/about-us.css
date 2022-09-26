@@ -147,6 +147,9 @@ body .main-container .top-bar .nav-bar .navMenu .nav-item a {
 body .main-container .top-bar .nav-bar .navMenu .nav-item a:hover {
   color: #F3A391;
 }
+body .main-container .top-bar .nav-bar .navMenu .abou a {
+  color: #F3A391;
+}
 body .main-container .top-bar .nav-bar .navMenu.active {
   right: 0px;
   top: 0;

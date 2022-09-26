@@ -135,6 +135,9 @@ body .main-container .top-bar .nav-bar .navMenu svg {
   height: -moz-fit-content;
   height: fit-content;
 }
+body .main-container .top-bar .nav-bar .navMenu .home a {
+  color: #F3A391;
+}
 body .main-container .top-bar .nav-bar .navMenu .nav-item {
   text-align: center;
 }
@@ -144,9 +147,6 @@ body .main-container .top-bar .nav-bar .navMenu .nav-item a {
   color: white;
 }
 body .main-container .top-bar .nav-bar .navMenu .nav-item a:hover {
-  color: #F3A391;
-}
-body .main-container .top-bar .nav-bar .navMenu .home a {
   color: #F3A391;
 }
 body .main-container .top-bar .nav-bar .navMenu.active {

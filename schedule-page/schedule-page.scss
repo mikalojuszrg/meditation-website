@@ -8,7 +8,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
 
-
         .top-bar {
             display: grid;
             grid-template-columns: auto 100px;
@@ -21,7 +20,6 @@ body {
                 display: flex;
                 height: 80px;
                
-
                 .header-left {
                     display: flex;
                     background-color: rgb(227,235,251);
@@ -98,7 +96,8 @@ body {
                                 color: rgb(72, 73, 85);
                                 font-weight: lighter;
                             }
-                            }
+
+                        }
 
                             &:hover {
                                 button {
@@ -111,13 +110,11 @@ body {
 
                             }
                     }
-
-                       
+                     
                 }
-                
+
             }
             
-
             .nav-bar {
                 background-color: #454659;
                 height: 80px;
@@ -161,36 +158,36 @@ body {
 
                     svg {
                         width: 150px;
-                        height: fit-content;
-                      
+                        height: fit-content;        
                     }
 
-                    .nav-item {
-                        
-                        text-align: center;
+                    .home {
+                        a {
+                            color:#F3A391;
+                        }
+                    }
 
-                        
+                    .nav-item {                     
+                        text-align: center;
+                 
                         a {
                             font-size: 30px;;   
                             text-decoration: none;
                             color:white;   
-                        
-
+                    
                         &:hover {
                         color:#F3A391;
                         }
                         }
                    
                     }
-                    
+
                     .schedule {
                         a {
-                            color:#F3A391;
+                            color: #F3A391;
                         }
                     }
-
-                
-                
+                                
                 }
 
                 .navMenu.active {
@@ -199,11 +196,8 @@ body {
                     margin-top: -20px;
                     padding-bottom: 20px;
 
-
                     img {
-                        fill: white;
-                       
-                        
+                        fill: white;                  
                     }
                 }
 
@@ -213,12 +207,13 @@ body {
                     .hamburger.active {
                         opacity: 1;
                     }
+
                 svg {
                     width: 80px;
                     height: 40px;
                 }
 
-            }
+                }
             }
         }
 
@@ -266,7 +261,6 @@ body {
                     color: white;
                     }
                 }
-
             }
 
             .selections-list-all {
@@ -306,8 +300,7 @@ body {
                         }
                     }
 
-                    .details {
-                       
+                    .details {          
                         padding-top: 0;
                         margin-top: -10px;
                     }
@@ -362,8 +355,7 @@ body {
                         }
                     }
 
-                    .details {
-                       
+                    .details {      
                         padding-top: 0;
                         margin-top: -10px;
                     }
@@ -418,8 +410,7 @@ body {
                         }
                     }
 
-                    .details {
-                       
+                    .details {           
                         padding-top: 0;
                         margin-top: -10px;
                     }
@@ -474,8 +465,7 @@ body {
                         }
                     }
 
-                    .details {
-                       
+                    .details {        
                         padding-top: 0;
                         margin-top: -10px;
                     }
@@ -558,10 +548,6 @@ body {
                     }
                 }
             }
-
-           
-
-            
         }
 
         footer {
@@ -575,15 +561,12 @@ body {
                 text-align: left;
                 font-family: poppins-extralight,poppins,sans-serif;
                 
-
                 .footer-logo {
                     display: flex;
                     flex-direction: column;
                     width: 200px;
                     text-align: center;
                     align-self: center;
-
-                
 
                     svg {
                         height: 100px;
@@ -607,7 +590,6 @@ body {
                     flex-direction: column;
                     padding-top: 80px;
                     
-
                     .nav-heading {
                         font-size: 17px;
                         color: rgb(72, 73, 85);
@@ -630,10 +612,8 @@ body {
                 .contact-info {
                     display: flex;
                     flex-direction: column;
-                
                     padding-top: 80px;
-                    
-
+                
                     p {
                         font-size: 17px;
                         color: rgb(72, 73, 85);
@@ -683,11 +663,10 @@ body {
 
                     .input-part {
                         display: flex;
-                    
-
+            
                         input {
                             margin-top: 20px;
-                            height: 35px;
+                            height: 36px;
                             min-width: 100%;
                             background-color: #eecdc9;
                             border:#454659 2px solid;
@@ -743,12 +722,8 @@ body {
                 color: rgb(72, 73, 85);
                 background-color: #e9f3ef;
                 border-top: 1px solid black;
-
-            }
+            }          
             
-            
-            }
-
-            
+        }        
     }
 }

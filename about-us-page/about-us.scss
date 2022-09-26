@@ -117,7 +117,6 @@ body {
                 
             }
             
-
             .nav-bar {
                 background-color: #454659;
                 height: 80px;
@@ -186,10 +185,7 @@ body {
                         a {
                         color: #F3A391;
                         }
-                    }
-
-
-                
+                    }            
                 }
 
                 .navMenu.active {
@@ -277,16 +273,13 @@ body {
                         font-size: 20px;
                         line-height: 30px;
                         text-align: center;
-
                     }
                 }
 
                 .picture {
                     width: 60%;
-                    background-size: 100% 100%;
-                   
-                    background-image: url('https://static.wixstatic.com/media/c837a6_2ca0cbd39aec42ea8510360dfd51b84c~mv2.jpg/v1/fill/w_706,h_736,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_2ca0cbd39aec42ea8510360dfd51b84c~mv2.jpg');
-                    
+                    background-size: 100% 100%;       
+                    background-image: url('https://static.wixstatic.com/media/c837a6_2ca0cbd39aec42ea8510360dfd51b84c~mv2.jpg/v1/fill/w_706,h_736,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_2ca0cbd39aec42ea8510360dfd51b84c~mv2.jpg');         
                     background-attachment: fixed;
                 }
             }
@@ -296,8 +289,7 @@ body {
                 flex-direction: column;
                 width: 100%;
                 height: 55%;
-                background-color: white;
-                
+                background-color: white;          
 
                 h3 {
                     font-size: 64px;
@@ -322,15 +314,13 @@ body {
                     margin-top: 70px;
                    
 
-                    .teacher-1 {
+                    .teacher-1, .teacher-2, .teacher-3, .teacher-4, .teacher-5, .teacher-6 {
                         max-width: 400px;
-                        text-align: center;
-                       
+                        text-align: center;              
 
                         .image {
                             width: 150px;
-                            height: 150px;
-                           
+                            height: 150px;              
                             border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
                             overflow: hidden;
                             margin: 0 auto;
@@ -356,192 +346,12 @@ body {
                                 margin-top: 30px;
                             }
                         }
-                    }
-                    .teacher-2 {
-                        max-width: 400px;
-                        text-align: center;
-                       
-
-                        .image {
-                            width: 150px;
-                            height: 150px;
-                           
-                            border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
-                            overflow: hidden;
-                            margin: 0 auto;
-
-                            img {
-                                width: 100%;
-                            
-                            }
-                        }
-
-                        svg {
-                            width: 60px;
-                            height: 20px;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-
-                        p {
-                            width: 350px;
-
-                            &:nth-child(2){
-                                font-size: 14px;
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-                    .teacher-3 {
-                        max-width: 400px;
-                        text-align: center;
-                       
-
-                        .image {
-                            width: 150px;
-                            height: 150px;
-                           
-                            border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
-                            overflow: hidden;
-                            margin: 0 auto;
-
-                            img {
-                                width: 100%;
-                            
-                            }
-                        }
-
-                        svg {
-                            width: 60px;
-                            height: 20px;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-
-                        p {
-                            width: 350px;
-
-                            &:nth-child(2){
-                                font-size: 14px;
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-                    .teacher-4 {
-                        max-width: 400px;
-                        text-align: center;
-                       
-
-                        .image {
-                            width: 150px;
-                            height: 150px;
-                           
-                            border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
-                            overflow: hidden;
-                            margin: 0 auto;
-
-                            img {
-                                width: 100%;
-                            
-                            }
-                        }
-
-                        svg {
-                            width: 60px;
-                            height: 20px;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-
-                        p {
-                            width: 350px;
-
-                            &:nth-child(2){
-                                font-size: 14px;
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-                    .teacher-5 {
-                        max-width: 400px;
-                        text-align: center;
-                       
-
-                        .image {
-                            width: 150px;
-                            height: 150px;
-                           
-                            border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
-                            overflow: hidden;
-                            margin: 0 auto;
-
-                            img {
-                                width: 100%;
-                            
-                            }
-                        }
-
-                        svg {
-                            width: 60px;
-                            height: 20px;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-
-                        p {
-                            width: 350px;
-
-                            &:nth-child(2){
-                                font-size: 14px;
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-                    .teacher-6 {
-                        max-width: 400px;
-                        text-align: center;
-                       
-
-                        .image {
-                            width: 150px;
-                            height: 150px;
-                           
-                            border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
-                            overflow: hidden;
-                            margin: 0 auto;
-
-                            img {
-                                width: 100%;
-                            
-                            }
-                        }
-
-                        svg {
-                            width: 60px;
-                            height: 20px;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-
-                        p {
-                            width: 350px;
-
-                            &:nth-child(2){
-                                font-size: 14px;
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-
-                  
+                    }             
                 }
-
-
             }
             
         }
-
-        
+     
         footer {
 
             .nav-contactinfo-newsletter {
@@ -553,15 +363,12 @@ body {
                 text-align: left;
                 font-family: poppins-extralight,poppins,sans-serif;
                 
-
                 .footer-logo {
                     display: flex;
                     flex-direction: column;
                     width: 200px;
                     text-align: center;
                     align-self: center;
-
-                
 
                     svg {
                         height: 100px;
@@ -585,7 +392,6 @@ body {
                     flex-direction: column;
                     padding-top: 80px;
                     
-
                     .nav-heading {
                         font-size: 17px;
                         color: rgb(72, 73, 85);
@@ -608,10 +414,8 @@ body {
                 .contact-info {
                     display: flex;
                     flex-direction: column;
-                
                     padding-top: 80px;
-                    
-
+                
                     p {
                         font-size: 17px;
                         color: rgb(72, 73, 85);
@@ -637,8 +441,7 @@ body {
 
                 .newsletter-registration {
                     display: flex;
-                    flex-direction: column;
-                
+                    flex-direction: column;    
                     padding-top: 80px;
                     width: 200px;
 
@@ -661,11 +464,10 @@ body {
 
                     .input-part {
                         display: flex;
-                    
-
+            
                         input {
                             margin-top: 20px;
-                            height: 35px;
+                            height: 36px;
                             min-width: 100%;
                             background-color: #eecdc9;
                             border:#454659 2px solid;
@@ -721,12 +523,9 @@ body {
                 color: rgb(72, 73, 85);
                 background-color: #e9f3ef;
                 border-top: 1px solid black;
-
-            }
+            }          
             
-            
-            }
-
-            
+            }   
+         
     }
 }

@@ -8,7 +8,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
 
-
         .top-bar {
             display: grid;
             grid-template-columns: auto 100px;
@@ -21,7 +20,6 @@ body {
                 display: flex;
                 height: 80px;
                
-
                 .header-left {
                     display: flex;
                     background-color: rgb(227,235,251);
@@ -98,7 +96,8 @@ body {
                                 color: rgb(72, 73, 85);
                                 font-weight: lighter;
                             }
-                            }
+
+                        }
 
                             &:hover {
                                 button {
@@ -111,13 +110,11 @@ body {
 
                             }
                     }
-
-                       
+                     
                 }
-                
+
             }
             
-
             .nav-bar {
                 background-color: #454659;
                 height: 80px;
@@ -161,32 +158,36 @@ body {
 
                     svg {
                         width: 150px;
-                        height: fit-content;
-                      
+                        height: fit-content;        
                     }
 
-                    .nav-item {
-                        
-                        text-align: center;
+                    .home {
+                        a {
+                            color:#F3A391;
+                        }
+                    }
 
-                        
+                    .nav-item {                     
+                        text-align: center;
+                 
                         a {
                             font-size: 30px;;   
                             text-decoration: none;
                             color:white;   
-                        
-
+                    
                         &:hover {
                         color:#F3A391;
                         }
                         }
                    
                     }
-                    
-                  
 
-                
-                
+                    .home {
+                        a {
+                            color: #F3A391;
+                        }
+                    }
+                                
                 }
 
                 .navMenu.active {
@@ -195,11 +196,8 @@ body {
                     margin-top: -20px;
                     padding-bottom: 20px;
 
-
                     img {
-                        fill: white;
-                       
-                        
+                        fill: white;                  
                     }
                 }
 
@@ -209,12 +207,13 @@ body {
                     .hamburger.active {
                         opacity: 1;
                     }
+
                 svg {
                     width: 80px;
                     height: 40px;
                 }
 
-            }
+                }
             }
         }
 
@@ -223,6 +222,7 @@ body {
             width: 100%;
             height: 700px;
             color:#454659;
+
                 .back-button {
 
                     i {
@@ -266,12 +266,9 @@ body {
                                     background-color:#cdd5ed;
                                     padding: 20px;
                                     font-size: 14px;
-
                                 }
                             }
-
                         }
-
 
                         .pay-form {
                             margin-top: 40px;
@@ -339,8 +336,7 @@ body {
                                         height: 90px;
                                         font-size: 18px;
                                         font-family: Arial, Helvetica, sans-serif;
-                                    }
-                           
+                                    }           
                             }
                         }
                         
@@ -378,10 +374,6 @@ body {
                             }
                         }
 
-                   
-
-                       
-
                         button {
                             width: 100%;
                             background-color: #454659;
@@ -401,198 +393,183 @@ body {
                         }
                     }
                 }
-
             }
 
-           
+            footer {
 
-            
-        
-
-        footer {
-
-            .nav-contactinfo-newsletter {
-                display: flex;
-                height: 350px;
-                width: 100%;
-                background-color: #e9f3ef;
-                justify-content: space-evenly;
-                text-align: left;
-                font-family: poppins-extralight,poppins,sans-serif;
-                
-
-                .footer-logo {
+                .nav-contactinfo-newsletter {
                     display: flex;
-                    flex-direction: column;
-                    width: 200px;
-                    text-align: center;
-                    align-self: center;
-
-                
-
-                    svg {
-                        height: 100px;
-                        widtH: 130px;
-                    }
-
-                    .text {
-                        font-size: 20px;
-                        font-weight: 100;
-                        letter-spacing: 6px;
-
-                        a {
-                            color: rgb(66, 67, 79);
-                            text-decoration: none;
-                        }
-                    }
-                }
-
-                .footer-nav {
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 80px;
+                    height: 350px;
+                    width: 100%;
+                    background-color: #e9f3ef;
+                    justify-content: space-evenly;
+                    text-align: left;
+                    font-family: poppins-extralight,poppins,sans-serif;
                     
-
-                    .nav-heading {
-                        font-size: 17px;
-                        color: rgb(72, 73, 85);
-                        margin-bottom: 25px;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        margin-bottom: 2px;
-                        line-height: 14px;
-                        
-                        a {
-                            color: rgb(72, 73, 85);
-                            text-decoration: none;
-                        }
-                    }
-
-                }
-
-                .contact-info {
-                    display: flex;
-                    flex-direction: column;
-                
-                    padding-top: 80px;
-                    
-
-                    p {
-                        font-size: 17px;
-                        color: rgb(72, 73, 85);
-                        margin-bottom: 15px;
-                    }
-
-                    .address {
-                        font-size: 14px;
-                        margin-bottom: 2px;
-                        line-height: 20px;
-                    }
-
-                    .ig-link {
-                        font-size: 14px;
-                        margin-bottom: 2px;
-                        
-                        a {
-                            color: rgb(72, 73, 85);
-                            text-decoration: none;
-                        }
-                    }
-                }
-
-                .newsletter-registration {
-                    display: flex;
-                    flex-direction: column;
-                
-                    padding-top: 80px;
-                    width: 200px;
-
-                    .registration-heading {
-                        font-size: 17px;
-                        color: rgb(72, 73, 85);
-                        margin-bottom: 15px;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: rgb(72, 73, 85);
-                    }
-
-                    label {
-                        font-size: 14px;
-                        color: rgb(72, 73, 85);
-                    }
-
-                    .input-part {
+                    .footer-logo {
                         display: flex;
-                    
-
-                        input {
-                            margin-top: 20px;
-                            height: 35px;
-                            min-width: 100%;
-                            background-color: #eecdc9;
-                            border:#454659 2px solid;
-
-                            &:active {
-                                border:#ff0000 2px solid;
+                        flex-direction: column;
+                        width: 200px;
+                        text-align: center;
+                        align-self: center;
+    
+                        svg {
+                            height: 100px;
+                            widtH: 130px;
+                        }
+    
+                        .text {
+                            font-size: 20px;
+                            font-weight: 100;
+                            letter-spacing: 6px;
+    
+                            a {
+                                color: rgb(66, 67, 79);
+                                text-decoration: none;
                             }
                         }
-
-                        button {
-                            font-size: 17px;
-                            padding: 7px 20px 6px 20px;
-                            height: fit-content;
-                            background-color: rgb(72, 73, 85);
-                            border-radius: 25px;
-                            color: white;
-                            position: relative;
-                            right: 40px;
-                            top: 19px;
-                            border: 2px solid rgb(72, 73, 85);
-                            cursor: pointer;
-
-                            a {
-                                text-decoration: none;
-                                color: white;
-                                font-weight: lighter;
-                            }
-                            }
-
-                            &:hover {
-                                button {
-                                    background-color: #F3A391;
-                                    border: 2px solid #F3A391;
-                                    
-
-                                    a {
-                                        color: rgb(72, 73, 85);
-                                        
-                                    }
-                                }
-
-                            }
-
                     }
+    
+                    .footer-nav {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 80px;
+                        
+                        .nav-heading {
+                            font-size: 17px;
+                            color: rgb(72, 73, 85);
+                            margin-bottom: 25px;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            margin-bottom: 2px;
+                            line-height: 14px;
+                            
+                            a {
+                                color: rgb(72, 73, 85);
+                                text-decoration: none;
+                            }
+                        }
+    
+                    }
+    
+                    .contact-info {
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 80px;
                     
-                }
-               }   
-            
-            .copyright {
-                text-align: center;
-                padding: 25px 0 25px 0;
-                font-size: 14px;
-                color: rgb(72, 73, 85);
-                background-color: #e9f3ef;
-                border-top: 1px solid black;
-
-            }
-            
-            
-            }
+                        p {
+                            font-size: 17px;
+                            color: rgb(72, 73, 85);
+                            margin-bottom: 15px;
+                        }
+    
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 2px;
+                            line-height: 20px;
+                        }
+    
+                        .ig-link {
+                            font-size: 14px;
+                            margin-bottom: 2px;
+                            
+                            a {
+                                color: rgb(72, 73, 85);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+    
+                    .newsletter-registration {
+                        display: flex;
+                        flex-direction: column;
+                    
+                        padding-top: 80px;
+                        width: 200px;
+    
+                        .registration-heading {
+                            font-size: 17px;
+                            color: rgb(72, 73, 85);
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: rgb(72, 73, 85);
+                        }
+    
+                        label {
+                            font-size: 14px;
+                            color: rgb(72, 73, 85);
+                        }
+    
+                        .input-part {
+                            display: flex;
+                
+                            input {
+                                margin-top: 20px;
+                                height: 36px;
+                                min-width: 100%;
+                                background-color: #eecdc9;
+                                border:#454659 2px solid;
+    
+                                &:active {
+                                    border:#ff0000 2px solid;
+                                }
+                            }
+    
+                            button {
+                                font-size: 17px;
+                                padding: 7px 20px 6px 20px;
+                                height: fit-content;
+                                background-color: rgb(72, 73, 85);
+                                border-radius: 25px;
+                                color: white;
+                                position: relative;
+                                right: 40px;
+                                top: 19px;
+                                border: 2px solid rgb(72, 73, 85);
+                                cursor: pointer;
+    
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-weight: lighter;
+                                }
+                                }
+    
+                                &:hover {
+                                    button {
+                                        background-color: #F3A391;
+                                        border: 2px solid #F3A391;
+                                        
+    
+                                        a {
+                                            color: rgb(72, 73, 85);
+                                            
+                                        }
+                                    }
+    
+                                }
+    
+                        }
+                        
+                    }
+                   }   
+                
+                .copyright {
+                    text-align: center;
+                    padding: 25px 0 25px 0;
+                    font-size: 14px;
+                    color: rgb(72, 73, 85);
+                    background-color: #e9f3ef;
+                    border-top: 1px solid black;
+                }          
+                
+            }  
 
             
     }
